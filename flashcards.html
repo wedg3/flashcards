@@ -8,19 +8,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --grad1: #feac5e;
-      --grad2: #c779d0;
-      --grad3: #4bc0c8;
-      --bg: linear-gradient(135deg, var(--grad1), var(--grad2) 45%, var(--grad3) 100%);
-      --text: #fffaf7;
-      --muted: #e6e6e6cc;
---card-bg: linear-gradient(145deg, #5e548e 0%, #231942 60%, #000000 100%);
+:root {
+  --grad1: #feac5e;
+  --grad2: #c779d0;
+  --grad3: #4bc0c8;
+  --bg: linear-gradient(135deg, var(--grad1), var(--grad2) 45%, var(--grad3) 100%);
+  --front-bg: linear-gradient(145deg, #5e548e 0%, #231942 70%, #0e0a1f 100%);
+  --back-bg: linear-gradient(145deg, #0a3a4a 0%, #0a2232 70%, #02141a 100%);
+  
 
 
-      --border: #ffffff;
-	
-    }
+  --text: #fffaf7;
+  --muted: #e6e6e6cc;
+  --border: #ffffff;
+}
+
     * { box-sizing: border-box; }
     html, body { height: 100%; margin: 0; }
     body {
@@ -58,24 +60,40 @@ button {
       position: absolute; inset: 0;
       display: flex; align-items: center; justify-content: center; flex-direction: column;
       border-radius: 20px;
-      background: var(--card-bg);
+      background: var(--front-bg);
       border: 1px solid var(--border);
       box-shadow: 0 20px 40px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.05);
       backface-visibility: hidden;
+	  box-shadow: 0 20px 40px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.05);
     }
-    .back { transform: rotateY(180deg); }
+    .back {
+	  transform: rotateY(180deg);
+	  background: var(--back-bg);
+	  box-shadow: 0 20px 60px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.03);
+	}
 
     .frontText { font-size: clamp(26px, 8cqw, 72px); font-weight: 800; letter-spacing: 0.03em; padding: 0 20px; }
-    .backText { font-size: clamp(18px, 3cqw, 28px); line-height: 1.6; color: #f2f5ff; max-height: 100%; overflow: auto; text-align: left; width: min(90%, 58ch); }
+    .backText { font-size: clamp(18px, 3cqw, 28px); line-height: 1.6; color: #f2f5ff; max-height: 100%; overflow: auto; text-align: left; width: min(90%, 58ch); letter-spacing:1.6px;}
 
 	  .backHeader {
-  font-size: clamp(16px, 2.5cqw, 22px);
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+	  
   font-weight: 700;
+  font-size: clamp(14px, 2.2cqw, 20px);
   color: #ffdca8;
-  margin-bottom: 10px;
+  opacity: .95;
   text-align: center;
-  opacity: 0.9;
-}
+  pointer-events: none;   /* clicks still flip the card */
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  
+	}
     footer {
       display: flex; justify-content: center; gap: 10px; align-items: center;
       color: var(--muted); font-size: 12px;
@@ -237,5 +255,4 @@ button {
   </script>
 </body>
 </html>
-
 
