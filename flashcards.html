@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+/* ============= One-Column / Standing CSS ============= */
+
 :root {
   --grad1: #feac5e;
   --grad2: #c779d0;
@@ -15,31 +17,55 @@
   --bg: linear-gradient(135deg, var(--grad1), var(--grad2) 45%, var(--grad3) 100%);
   --front-bg: linear-gradient(145deg, #5e548e 0%, #231942 70%, #0e0a1f 100%);
   --back-bg: linear-gradient(145deg, #0a3a4a 0%, #0a2232 70%, #02141a 100%);
-  
-
 
   --text: #fffaf7;
   --muted: #e6e6e6cc;
   --border: #ffffff;
 }
 
-    * { box-sizing: border-box; }
-    html, body { height: 100%; margin: 0; }
-    body {
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      background: var(--bg);
-      color: var(--text);
-      text-align: center;
-    }
-    .wrap { width: min(920px, 90vw); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
 
-    header { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 6px; }
-    .title { font-weight: 800; font-size: 26px; letter-spacing: 2px; color: var(--text);  text-shadow: 0 8px 12px rgba(0,020,40), 0 5px 2px rgba(0,0,0,.60); }
-    .controls { display: flex; justify-content: center; z-index:4000;}
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  text-align: left;            /* left-align for standing layout */
+}
+
+/* Main column wrapper */
+.wrap {
+  width: min(780px, 92vw);     /* comfortable reading width */
+  margin: 32px auto;           /* center the single column on the page */
+  display: block;              /* no flex; it's a normal document flow column */
+}
+
+/* Header: left-aligned, stacked */
+header {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: var(--text);
+  text-shadow: 0 8px 12px rgba(0,20,40,0.6), 0 5px 2px rgba(0,0,0,.60);
+  margin: 0 0 8px 0;
+}
+
+/* Controls: sit under the title, left aligned */
+.controls {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 4000;
+  margin: 8px 0 0 0;
+}
 
 button {
-  
   background: linear-gradient(90deg, var(--grad1), var(--grad2), var(--grad3));
   color: #fff;
   padding: 6px 16px;
@@ -47,91 +73,149 @@ button {
   font-weight: 700;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(255, 255, 255, 1);
+  cursor: pointer;
 }
-		
-    button:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.35);
+}
 
-    .card-area { display: flex; justify-content: center; margin: 10px 0; }
-    .card {   width: min(620px, 86vw);
-  min-height: 300px;          /* base height for shorter text */
+/* Card area: flows with the document as a single column block */
+.card-area {
+  display: block;
+  margin: 14px 0 10px 0;
+}
+
+/* Card fills the column width */
+.card {
+  width: 100%;
+  min-height: 300px; /* base height for shorter text */
   perspective: 1200px;
   container-type: size;
-  position: relative; }
-    
-.card-inner {   position: relative;
+  position: relative;
+  margin: 12px 0;    /* breathing room between stacked sections */
+}
+
+.card-inner {
+  position: relative;
   width: 100%;
   height: 100%;
   min-height: inherit;
   transition: transform 0.6s cubic-bezier(.2,.8,.2,1);
-  transform-style: preserve-3d;  }
-    .card.flipped .card-inner { transform: rotateY(180deg);  }
+  transform-style: preserve-3d;
+}
+.card.flipped .card-inner { transform: rotateY(180deg); }
 
-    .face {
+.face {
   position: absolute;
   inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;   /* left-align inside the card */
   border-radius: 20px;
   background: var(--front-bg);
   border: 1px solid var(--border);
   box-shadow: 0 20px 40px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.05);
   backface-visibility: hidden;
-  padding: 2em 0.5em;
+  padding: 1.4em 1.2em;
   height: auto;
-    }
-    .back {
-	  transform: rotateY(180deg);
-	  background: var(--back-bg);
-	  box-shadow: 0 20px 60px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.03);
-	}
+  text-align: left;
+}
+.back {
+  transform: rotateY(180deg);
+  background: var(--back-bg);
+  box-shadow: 0 20px 60px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.03);
+}
 
-    .frontText { font-size: clamp(26px, 8cqw, 72px); font-weight: 800; letter-spacing: 0.03em; padding: 0 20px; }
-    .backText { font-size: clamp(18px, 3cqw, 28px); line-height: 1.4; color: #f2f5ff; max-height: 100%; overflow: auto; text-align: left; width: min(90%, 58ch); letter-spacing:1.3px;  -webkit-overflow-scrolling: touch;
+.frontText {
+  font-size: clamp(26px, 8cqw, 56px);
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  padding: 0;
+  margin: 0.2em 0;
+}
+
+.backText {
+  font-size: clamp(18px, 3cqw, 20px);
+  line-height: 1.55;
+  color: #f2f5ff;
+  max-height: 100%;
+  
+  width: 100%;
+  max-width: 62ch;          /* readable line length */
+  letter-spacing: 0.02em;
+  -webkit-overflow-scrolling: touch;
   scrollbar-gutter: stable;
-  scrollbar-width: thin;}
+  scrollbar-width: thin;
+    overflow-y: auto;
+  -webkit-overflow-scrolling: touch;   /* enables momentum scrolling on iOS */
+  scrollbar-gutter: stable;            /* keeps scrollbar space reserved */
+  scrollbar-width: thin;               /* thin scrollbar on Firefox */
+  
+}
 
-	  .backHeader {
+.backText::-webkit-scrollbar {
+  width: 6px;
+}
+
+.backText::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 3px;
+}
+
+.backText::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.1);
+}
+
+.backHeader {
   position: absolute;
   top: 14px;
-  left: 50%;
-  transform: translateX(-50%);
-	  
+  left: 1.2em;               /* align with card padding for single column */
+  transform: none;
   font-weight: 700;
-  font-size: clamp(14px, 2.2cqw, 20px);
+  font-size: clamp(14px, 2.2cqw, 18px);
   color: #ffdca8;
   opacity: .95;
-  text-align: center;
-  pointer-events: none;   /* clicks still flip the card */
-  max-width: 90%;
+  text-align: left;
+  pointer-events: none;
+  max-width: calc(100% - 2.4em);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-
-  
-	}
-    footer {
-      display: flex; justify-content: center; gap: 10px; align-items: center;
-      color: var(--muted); font-size: 12px;
-      background: rgba(0,0,0,.3);
-      backdrop-filter: blur(6px);
-      padding: 7px 16px; border-radius: 4px;
-	  margin-top:8px;
-    }
-    .kbd {
-      border: 1px solid rgba(255,255,255,.25);
-      background: rgba(255,255,255,.1);
-      padding: 2px 6px;
-      border-radius: 6px;
-      font-weight: 600;
-      color: #fff;
-    }
-	@media (max-width: 700px) {
-  footer {
-    display: none;
-  }
 }
+
+/* Footer spans the column width, still subtle */
+footer {
+  display: flex;
+  justify-content: flex-start;  /* left-align for one column */
+  gap: 10px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 12px;
+  background: rgba(0,0,0,.3);
+  backdrop-filter: blur(6px);
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 18px 0 0 0;
+}
+
+.kbd {
+  border: 1px solid rgba(255,255,255,.25);
+  background: rgba(255,255,255,.1);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Small screens: keep it simple & stacked */
+@media (max-width: 700px) {
+  .wrap { width: min(96vw, 720px); margin: 20px auto; }
+  .title { font-size: 24px; }
+  footer { display: none; }
+}
+
 	
   </style>
 </head>
