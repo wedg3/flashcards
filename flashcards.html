@@ -68,6 +68,14 @@ button {
     .frontText { font-size: clamp(26px, 8cqw, 72px); font-weight: 800; letter-spacing: 0.03em; padding: 0 20px; }
     .backText { font-size: clamp(18px, 3cqw, 28px); line-height: 1.6; color: #f2f5ff; max-height: 100%; overflow: auto; text-align: left; width: min(90%, 58ch); }
 
+	  .backHeader {
+  font-size: clamp(16px, 2.5cqw, 22px);
+  font-weight: 700;
+  color: #ffdca8;
+  margin-bottom: 10px;
+  text-align: center;
+  opacity: 0.9;
+}
     footer {
       display: flex; justify-content: center; gap: 10px; align-items: center;
       color: var(--muted); font-size: 12px;
@@ -100,8 +108,9 @@ button {
             <div class="frontText" id="frontText">…</div>
           </section>
           <section class="face back" aria-label="Back">
-            <div class="backText" id="backText">…</div>
-          </section>
+			  <div class="backHeader" id="backHeader"></div>
+			  <div class="backText" id="backText">…</div>
+			</section>
         </div>
       </div>
     </div>
@@ -156,6 +165,7 @@ button {
 
     function setCard(pair) {
       document.getElementById('frontText').textContent = pair.front || '';
+	  document.getElementById('backHeader').textContent = pair.front || '';
       document.getElementById('backText').innerHTML = (pair.back || '').replace(/\\n/g, '<br>');
 
     }
@@ -227,4 +237,5 @@ button {
   </script>
 </body>
 </html>
+
 
