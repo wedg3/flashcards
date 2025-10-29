@@ -95,4 +95,4 @@ const words = [
   { front: "Etableringsfrihet", back: "Rätten att starta och driva medier utan hinder från staten – vem som helst får starta tryckeri/tidning inom lagens ramar." }
 ];
 
-export { wordlisttitle, words };
+
