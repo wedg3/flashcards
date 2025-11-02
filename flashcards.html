@@ -53,8 +53,9 @@ button {
   border: 1px solid rgba(255, 255, 255, 1);
   cursor: pointer;
 }
-#btnPrev{background: linear-gradient(180deg, var(--grad1), var(--grad2) 45%, var(--grad3) 100%); }
-#btnNext{background: linear-gradient(180deg, var(--grad1), var(--grad2) 45%, var(--grad3) 100%); }
+
+#btnPrev{background: linear-gradient(135deg, var(--grad1), var(--grad2) 45%, var(--grad3) 100%); padding-left:22px;padding-right:22px;}
+#btnNext{background: linear-gradient(135deg, var(--grad1), var(--grad2) 45%, var(--grad3) 100%); padding-left:22px;padding-right:22px;}
 	  
 button:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.35); }
 .controls button { padding: 6px 14px; }
@@ -137,10 +138,10 @@ button:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.3
 
 footer {
   display: flex; justify-content: center; gap: 10px; align-items: center;
-  color: var(--muted); font-size: 12px;
-  background: rgba(0,0,0,.3);
+  color: var(--muted); font-size: 11px;
+  background: rgba(0,0,0,.05);
   backdrop-filter: blur(6px);
-  padding: 7px 16px; border-radius: 4px;
+  padding: 7px 11px; border-radius: 4px;
   margin-top:8px;
 }
 .kbd {
@@ -148,7 +149,7 @@ footer {
   background: rgba(255,255,255,.1);
   padding: 2px 6px;
   border-radius: 6px;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
 }
 @media (max-width: 700px) {
@@ -181,7 +182,8 @@ footer {
 	<div class="controls">
 	  <button id="btnPrev" aria-label="Previous card">⟵ </button>
 	  <span id="counter"></span>
-	  <button id="btnNext" aria-label="Next card">⟶</button>
+	  
+	 <button id="btnNext" aria-label="Next card">⟶</button>
 	</div>
 
 	<div class="controls">
@@ -192,7 +194,7 @@ footer {
       <div>
         
         <span class="kbd">Space</span> flippa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span class="kbd">←</span>/<span class="kbd">→</span> föregående/nästa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="kbd">←</span>&nbsp;<span class="kbd">→</span> föregående / nästa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <span class="kbd">N</span> slumpa nytt
       </div>
     </footer>
