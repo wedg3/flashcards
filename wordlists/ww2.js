@@ -1,6 +1,9 @@
 const wordlisttitle = "Öva på begrepp om Andra världskriget";
 
 const words = [
+  
+   { front: "Vilka var De Allierade?", back: "Länder som krigade tillsammans mot <b>Axelmakterna</b>.<br><br><b>De största:</b> 🇬🇧 <b>Storbritannien</b> (från 1939), 🇫🇷 <b>Frankrike</b> (1939–1940; återupptog kampen från kolonier och motståndsrörelser efter ockupationen), 🇷🇺 <b>Sovjetunionen</b> (från 1941, efter Tysklands anfall), 🇺🇸 <b>USA</b> (från 1941, efter Japans attack mot Pearl Harbor), 🇨🇳 <b>Kina</b> (krig mot Japan redan sedan 1937)." },
+  { front: "Vilka var Axelmakterna?", back: "Länder som krigade tillsammans mot <b>De Allierade</b>.<br><br><b>Huvudländer:</b> 🇩🇪 <b>Tyskland</b> (under Adolf Hitler), 🇮🇹 <b>Italien</b> (under Benito Mussolini; bytte sida 1943 efter Mussolinis fall), 🇯🇵 <b>Japan</b> (under kejsar Hirohito och militärledningen). <i>Andra stater lydde eller samarbetade med dem också</i>, t.ex. Ungern, Rumänien och Bulgarien." },
   { front: "Molotov–Ribbentrop-pakten", back: "En icke-angreppspakt mellan Tyskland och Sovjetunionen, undertecknad 1939. Länderna lovade att inte anfalla varandra och delade hemligt upp Östeuropa mellan sig. Pakten gjorde det möjligt för Tyskland att starta kriget utan att frukta Sovjet." },
   { front: "Blixtkrig", back: "En ny tysk krigstaktik där man anföll snabbt och överraskande med flyg, stridsvagnar och marktrupper. Syftet var att slå ut fienden innan den hann försvara sig. Polen och Frankrike besegrades på detta sätt." },
   { front: "Annektera", back: "Att tvinga till sig ett område och göra det till en del av sitt eget land. Tyskland annekterade till exempel Österrike 1938. Ordet används ofta när ett land tar över ett annat utan att fråga." },
@@ -18,4 +21,5 @@ const words = [
   { front: "Pearl Harbor", back: "En amerikansk flottbas på Hawaii som attackerades av Japan den 7 december 1941. Anfallet förstörde stora delar av USA:s Stillahavsflotta. Efter attacken gick USA in i kriget." },
   { front: "Kapitulera", back: "Att ge upp i ett krig eller en strid. Tyskland kapitulerade den 8 maj 1945, vilket markerade slutet på kriget i Europa. <br><br>Exempel: “Efter månader av strider tvingades armén kapitulera.”" },
   { front: "Hiroshima / Nagasaki", back: "Två japanska städer som USA fällde atombomber över i augusti 1945. Hundratusentals människor dog direkt eller av strålskador. Efter bomberna tvingades Japan kapitulera och andra världskriget tog slut." }
+  
 ];
