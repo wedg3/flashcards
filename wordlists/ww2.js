@@ -18,7 +18,7 @@ const words = [
   { front: "Förintelsen", back: "Nazitysklands systematiska utrotning av judar och andra grupper under andra världskriget. Cirka sex miljoner judar mördades i koncentrations- och förintelseläger. Förintelsen är ett av de största brotten i mänsklighetens historia." },
   { front: "Koncentrationsläger", back: "Läger där människor fängslades, tvingades arbeta och ofta dödades. Judar, romer, politiska motståndare och andra fängslades där. <br><br><b>Auschwitz</b> är det mest kända exemplet." },
   { front: "Nürnbergprocessen", back: "Rättegångarna mot nazistiska ledare efter kriget. De hölls i staden Nürnberg 1945–1946. Många dömdes till döden för krigsbrott och brott mot mänskligheten." },
-  { front: "Pearl Harbor", back: "En amerikansk flottbas på Hawaii som attackerades av Japan den 7 december 1941. Anfallet förstörde stora delar av USA:s Stillahavsflotta. Efter attacken gick USA in i kriget." },
+  { front: "Pearl Harbor", back: "En amerikansk flottbas (militär hamn) på Hawaii som attackerades av Japan den 7 december 1941. Anfallet förstörde stora delar av USA:s Stillahavsflotta. Efter attacken gick USA in i kriget." },
   { front: "Kapitulera", back: "Att ge upp i ett krig eller en strid. Tyskland kapitulerade den 8 maj 1945, vilket markerade slutet på kriget i Europa. <br><br>Exempel: “Efter månader av strider tvingades armén kapitulera.”" },
   { front: "Hiroshima / Nagasaki", back: "Två japanska städer som USA fällde atombomber över i augusti 1945. Hundratusentals människor dog direkt eller av strålskador. Efter bomberna tvingades Japan kapitulera och andra världskriget tog slut." }
   
