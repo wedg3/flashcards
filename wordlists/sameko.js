@@ -15,7 +15,7 @@ const words = [
   { front: "Den offentliga sektorn", back: "Staten, regioner och kommuner som erbjuder tjänster som skola och vård." },
   { front: "Depression", back: "En mycket allvarlig och långvarig ekonomisk kris.<br><br><i>Många blir arbetslösa</i>." },
   { front: "Det ekonomiska kretsloppet", back: "Hur pengar rör sig mellan hushåll, företag, banker och staten." },
-  { front: "Efterfrågan", back: "Hur mycket människor vill köpa av en vara eller tjänst." },
+  { front: "Efterfrågan", back: "Hur många människor vill köpa av en vara eller tjänst." },
   { front: "Efterfrågansöverskott", back: "När fler vill köpa än vad som finns att sälja.<br><br><b>Brist på varor</b>." },
   { front: "Ekonomi", back: "Hur man använder resurser som pengar och tid på bästa sätt." },
   { front: "Ekonomiskt bistånd", back: "Pengar som kommunen kan ge personer som behöver hjälp för att klara sin vardag." },
