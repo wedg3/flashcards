@@ -73,7 +73,7 @@ const words = [
 
   { front: "Skillnad mellan förnybara och icke förnybara energikällor?", back: "Förnybara tar inte slut och fylls på naturligt.<br><br>Icke förnybara finns i begränsad mängd och kommer att ta slut." },
 
-  { front: "Fördelar och nackdelar med vindkraft?", back: "Exempel:<br><br><b>Fördel:</b> Förnybar, utsläppsfri.<br><br><b>Nackdel:</b> Vind varierar." },
+  { front: "Fördelar och nackdelar med vindkraft?", back: "Exempel:<br><br><b>Fördel:</b> Förnybar, utsläppsfri.<br><br><b>Nackdel:</b> Vind varierar och då också elproduktionen" },
 
   { front: "Fördelar och nackdelar med vattenkraft?", back: "Exempel:<br><br><b>Fördel:</b> Stabil, styrbar energi.<br><br><b>Nackdel:</b> Påverkar ekosystem." },
 
@@ -81,5 +81,5 @@ const words = [
 
   { front: "Fördelar och nackdelar med kärnkraft?", back: "Exempel:<br><br><b>Fördel:</b> Mycket energi, nästan fossilfri.<br><br><b>Nackdel:</b> Radioaktivt avfall och risk för olyckor." },
 
-  { front: "Fördelar och nackdelar med fossila bränslen?", back: "Exempel:<br><br><b>Fördel:</b> Lätt att lagra och använda.<br><br><b>Nackdel:</b> Stora utsläpp." }
+  { front: "Fördelar och nackdelar med fossila bränslen?", back: "Exempel:<br><br><b>Fördel:</b> Effektiv. Lätt att lagra och använda.<br><br><b>Nackdel:</b> Stora utsläpp. Bidrar starkt till global uppvärmning." }
 ];
