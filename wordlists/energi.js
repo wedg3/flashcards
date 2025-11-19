@@ -1,50 +1,69 @@
-const wordlisttitle = "Energi och energikällor";
+const wordlisttitle = "Öva på begrepp om energi och energikällor";
 
 const words = [
-  { front: "Energi (E)", back: "Energi är förmågan att utföra arbete eller orsaka förändring.<br><br>Mäts i <b>joule (J)</b>." },
-  { front: "Kraft (F)", back: "Kraft är något som kan ändra ett föremåls fart eller riktning.<br><br>Mäts i <b>newton (N)</b>." },
-  { front: "Arbete (W)", back: "När en kraft flyttar ett föremål en viss sträcka.<br><br>Formel: <b>W = F × s</b>.<br>Mäts i <b>newtonmeter (Nm)</b>." },
-  { front: "Massa (m)", back: "Massa beskriver hur mycket materia ett föremål innehåller.<br><br>Mäts i <b>kilogram (kg)</b>." },
-  { front: "Effekt (P)", back: "Effekt visar hur snabbt energi används eller arbete utförs.<br><br>Mäts i <b>watt (W)</b> = 1 J/s." },
-  { front: "Energiform", back: "Ett sätt som energi kan finnas på.<br><br>Ex: <i>rörelseenergi, lägesenergi, värmeenergi, elektrisk energi</i>." },
-  { front: "Energiomvandling", back: "När energi går från en form till en annan.<br><br>Ex: <i>rörelseenergi → elektrisk energi</i>." },
-  { front: "Energikvalitet", back: "Hur användbar en energiform är.<br><br><b>Hög:</b> elektrisk energi.<br><b>Låg:</b> värmeenergi.<br><br>Energi går från hög till låg kvalitet." },
-  { front: "Energikälla", back: "Något vi kan utvinna energi från.<br><br>Ex: sol, vind, vatten, fossila bränslen." },
-  { front: "Energikedja", back: "Visar hur energi omvandlas steg för steg.<br><br>Ex: <i>solenergi → vatten i rörelse → vattenkraftverk → elektricitet</i>." },
-  { front: "Förnybar energikälla", back: "Fylls på naturligt.<br><br>Ex: <i>sol, vind, vatten, biomassa</i>." },
-  { front: "Icke förnybar energikälla", back: "Tar slut och återskapas långsamt.<br><br>Ex: <i>olja, kol, naturgas</i>." },
-  { front: "Generator", back: "Omvandlar <b>rörelseenergi</b> till <b>elektrisk energi</b> genom induktion." },
-  { front: "Turbin", back: "En propellerliknande del som snurrar av vatten, vind eller ånga och driver en generator." },
-  { front: "Kondensor", back: "Kyler ner ånga till vatten igen så att processen kan upprepas i ett kraftverk." },
-  { front: "Induktion", back: "När en elektrisk ström skapas av att en ledare rör sig i ett magnetfält.<br><br>Elektronerna sätts i rörelse." },
+  { front: "Vad är energi och vilken enhet mäts den i?", back: "Energi är förmågan att utföra arbete eller orsaka förändring.<br><br>Den mäts i <b>joule (J)</b>." },
 
-  /* Formler */
-  { front: "Formel: W = F × s", back: "Beräknar arbete.<br><br>Exempel:<br>10 N × 3 m = <b>30 Nm</b>." },
-  { front: "Formel: P = U × I", back: "Visar elektrisk effekt.<br><br>Exempel:<br>12 V × 2 A = <b>24 W</b>." },
-  { front: "Formel: P = W / t", back: "Beräknar effekt.<br><br>Exempel:<br>100 J / 5 s = <b>20 W</b>." },
+  { front: "Vad betyder begreppet kraft?", back: "Kraft är något som kan ändra ett föremåls fart eller riktning.<br><br>Mäts i <b>newton (N)</b>." },
 
-  /* Förklaringar */
-  { front: "Hur skapas el av vinden?", back: "Vind → rotorblad snurrar → turbin → generator.<br><br>I generatorn sker <b>induktion</b>: en magnet roterar och får elektroner i spolar att röra sig → elektricitet." },
+  { front: "Vad menas med fysikaliskt arbete?", back: "Arbete är när en kraft flyttar ett föremål en viss sträcka.<br><br><i>W = F × s</i>" },
 
-  /* Beräkningsexempel */
-  { front: "Arbete – exempel", back: "50 N × 4 m = <b>200 Nm</b>." },
-  { front: "Effekt – exempel 1", back: "600 J arbete på 3 s → <b>200 W</b>." },
-  { front: "Effekt – exempel 2 (elektrisk)", back: "12 V × 3 A = <b>36 W</b>." },
+  { front: "Vad är massa?", back: "Massa anger hur mycket materia ett föremål innehåller.<br><br>Mäts i <b>kilogram (kg)</b>." },
 
-  /* Kännedom */
-  { front: "Energiformer – exempel", back: "Rörelseenergi, lägesenergi, värmeenergi, elektrisk energi, strålningsenergi, kemisk energi." },
+  { front: "Vad beskriver effekt?", back: "Effekt visar hur snabbt energi används eller arbete utförs.<br><br>Mäts i <b>watt (W)</b> = J/s." },
 
-  { front: "Förnybara energikällor – exempel", back: "Solenergi, vindenergi, vattenkraft." },
-  { front: "Icke förnybara energikällor – exempel", back: "Kärnkraft, kol, olja, naturgas." },
+  { front: "Vad är en energiform?", back: "Olika sätt som energi kan finnas på, t.ex.:<br><br>• rörelseenergi<br>• lägesenergi<br>• värmeenergi<br>• elektrisk energi" },
 
-  { front: "Energiomvandling – exempel", back: "Vindens rörelseenergi → elektrisk energi i ett vindkraftverk." },
+  { front: "Vad menas med energiomvandling?", back: "När energi övergår från en form till en annan.<br><br>Ex: rörelseenergi → elektrisk energi." },
 
-  { front: "Skillnad: förnybar vs icke förnybar", back: "<b>Förnybar:</b> tar inte slut.<br><b>Icke förnybar:</b> finns i begränsad mängd och ger ofta mer utsläpp." },
+  { front: "Vad innebär energikvalitet?", back: "Hur användbar en energiform är.<br><br>Hög kvalitet: <b>elektrisk energi</b><br>Låg kvalitet: <b>värmeenergi</b>" },
 
-  /* För- och nackdelar */
-  { front: "Vindkraft – fördel & nackdel", back: "<b>Fördel:</b> Förnybar, nästan inga CO₂-utsläpp.<br><b>Nackdel:</b> Oregelbunden produktion." },
-  { front: "Vattenkraft – fördel & nackdel", back: "<b>Fördel:</b> Stabil och styrbar.<br><b>Nackdel:</b> Påverkar ekosystem." },
-  { front: "Solenergi – fördel & nackdel", back: "<b>Fördel:</b> Förnybar och miljövänlig.<br><b>Nackdel:</b> Producerar bara när solen lyser." },
-  { front: "Kärnkraft – fördel & nackdel", back: "<b>Fördel:</b> Ger mycket energi, nästan fossilfri.<br><b>Nackdel:</b> Radioaktivt avfall och risker vid olyckor." },
-  { front: "Fossila bränslen – fördel & nackdel", back: "<b>Fördel:</b> Enkla att lagra och ger mycket energi.<br><b>Nackdel:</b> Stora klimatutsläpp." }
+  { front: "Vad är en energikälla?", back: "Något vi kan utvinna energi från, t.ex. solen, vind, vatten eller fossila bränslen." },
+
+  { front: "Vad menas med en energikedja?", back: "Visar stegvisa energiomvandlingar.<br><br>Ex: solenergi → vatten i rörelse → vattenkraftverk → elektricitet." },
+
+  { front: "Vad är en förnybar energikälla?", back: "En energikälla som fylls på naturligt.<br><br>Ex: sol, vind, vatten, biomassa." },
+
+  { front: "Vad är en icke förnybar energikälla?", back: "En energikälla som inte återskapas snabbt.<br><br>Ex: olja, kol, naturgas." },
+
+  { front: "Vad gör en generator?", back: "Omvandlar <b>rörelseenergi</b> till <b>elektrisk energi</b> genom induktion." },
+
+  { front: "Vad är en turbin?", back: "En propellerliknande del som snurrar av vatten, vind eller ånga och driver en generator." },
+
+  { front: "Vad gör en kondensor i ett kraftverk?", back: "Kyl ner ånga så att den blir vatten igen, så processen kan fortsätta." },
+
+  { front: "Vad är elektromagnetisk induktion?", back: "En elektrisk ström skapas när en ledare rör sig i ett magnetfält." },
+
+  { front: "Vad används formeln W = F × s till?", back: "Att beräkna arbete: kraft × sträcka." },
+
+  { front: "Vad visar formeln P = U × I?", back: "Elektrisk effekt.<br><br><b>P = spänning × ström</b>." },
+
+  { front: "Vad används formeln P = W / t till?", back: "Att räkna ut effekt genom energi/arbete delat med tid." },
+
+  { front: "Hur kan vinden skapa elektricitet?", back: "Vinden snurrar rotorblad → turbin roterar → generator skapar ström genom induktion." },
+
+  { front: "Du puttar en låda med 50 N över 4 meter. Hur stort arbete utförs?", back: "<b>200 Nm</b>" },
+
+  { front: "En motor gör 600 J arbete på 3 s. Vilken effekt har den?", back: "<b>200 W</b>" },
+
+  { front: "En apparat har 12 V och 3 A. Vilken effekt ger den?", back: "<b>36 W</b>" },
+
+  { front: "Nämn några energiformer.", back: "• Rörelseenergi<br>• Lägesenergi<br>• Värmeenergi<br>• Elektrisk energi<br>• Strålningsenergi<br>• Kemisk energi" },
+
+  { front: "Nämn några förnybara energikällor.", back: "• Solenergi<br>• Vindenergi<br>• Vattenkraft" },
+
+  { front: "Nämn några icke förnybara energikällor.", back: "• Kärnkraft<br>• Kol<br>• Olja<br>• Naturgas" },
+
+  { front: "Ge exempel på en energiomvandling.", back: "Vindens rörelseenergi → elektrisk energi i vindkraftverk." },
+
+  { front: "Skillnad mellan förnybara och icke förnybara energikällor?", back: "Förnybara tar inte slut och fylls på naturligt.<br><br>Icke förnybara finns i begränsad mängd och ger mer utsläpp." },
+
+  { front: "Fördel och nackdel med vindkraft?", back: "<b>Fördel:</b> Förnybar, utsläppsfri.<br><br><b>Nackdel:</b> Vind varierar." },
+
+  { front: "Fördel och nackdel med vattenkraft?", back: "<b>Fördel:</b> Stabil, styrbar energi.<br><br><b>Nackdel:</b> Påverkar ekosystem." },
+
+  { front: "Fördel och nackdel med solenergi?", back: "<b>Fördel:</b> Förnybar och miljövänlig.<br><br><b>Nackdel:</b> Producerar bara när solen lyser." },
+
+  { front: "Fördel och nackdel med kärnkraft?", back: "<b>Fördel:</b> Mycket energi, nästan fossilfri.<br><br><b>Nackdel:</b> Radioaktivt avfall och risk för olyckor." },
+
+  { front: "Fördel och nackdel med fossila bränslen?", back: "<b>Fördel:</b> Lätt att lagra och använda.<br><br><b>Nackdel:</b> Stora utsläpp." }
 ];
