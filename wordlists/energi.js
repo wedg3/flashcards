@@ -1,4 +1,4 @@
-const wordlisttitle = "Öva på begrepp om energi och energikällor";
+const wordlisttitle = "Energi och energikällor";
 
 const words = [
   { front: "Vad är energi och vilken enhet mäts den i?", back: "Energi är förmågan att utföra arbete eller orsaka förändring.<br><br>Den mäts i <b>joule (J)</b>." },
@@ -35,17 +35,27 @@ const words = [
 
   { front: "Vad används formeln W = F × s till?", back: "Att beräkna arbete: kraft × sträcka." },
 
-  { front: "Vad visar formeln P = U × I?", back: "Elektrisk effekt.<br><br><b>P = spänning × ström</b>." },
+  { front: "Vad visar formeln P = U × I?", back: "Elektrisk effekt.<br><br><b>Effekt (P) = spänning (U) × ström (I)</b>." },
 
-  { front: "Vad används formeln P = W / t till?", back: "Att räkna ut effekt genom energi/arbete delat med tid." },
+  { front: "Vad används formeln P = W / t till?", back: "Att räkna ut effekt (P) genom arbete (W) delat med tid (t)." },
 
-  { front: "Hur kan vinden skapa elektricitet?", back: "Vinden snurrar rotorblad → turbin roterar → generator skapar ström genom induktion." },
+  { front: "Hur kan vinden skapa elektricitet?", back: "Vinden snurrar rotorblad → turbin roterar → generator skapar ström genom induktion (magneter får elektroner att röra på sig i koppartråd)." },
 
-  { front: "Du puttar en låda med 50 N över 4 meter. Hur stort arbete utförs?", back: "<b>200 Nm</b>" },
+{ 
+  front: "Du puttar en låda med 50 N över 4 meter. Hur stort arbete utförs?", 
+  back: "<b>200 Nm</b><br>Formel: W = F · s<br>Beräkning: 50 N · 4 m = 200 Nm" 
+},
 
-  { front: "En motor gör 600 J arbete på 3 s. Vilken effekt har den?", back: "<b>200 W</b>" },
+{ 
+  front: "En motor gör 600 J arbete på 3 s. Vilken effekt har den?", 
+  back: "<b>200 W</b><br>Formel: P = W / t<br>Beräkning: 600 J / 3 s = 200 W" 
+},
 
-  { front: "En apparat har 12 V och 3 A. Vilken effekt ger den?", back: "<b>36 W</b>" },
+{ 
+  front: "En apparat har 12 V och 3 A. Vilken effekt ger den?", 
+  back: "<b>36 W</b><br>Formel: P = U · I<br>Beräkning: 12 V · 3 A = 36 W" 
+},
+
 
   { front: "Nämn några energiformer.", back: "• Rörelseenergi<br>• Lägesenergi<br>• Värmeenergi<br>• Elektrisk energi<br>• Strålningsenergi<br>• Kemisk energi" },
 
