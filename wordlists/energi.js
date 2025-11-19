@@ -33,31 +33,36 @@ const words = [
 
   { front: "Vad är elektromagnetisk induktion?", back: "En elektrisk ström skapas när en ledare (t.ex. koppartråd) rör sig i ett magnetfält." },
 
-{ front: "Hur räknar man ut arbete?", 
-  back: "Med formeln W = F × s — arbete (W) är kraft (F) gånger sträcka (s). <br><br>Exempel: 10 N × 2 m = 20 J."" },
+  { front: "Hur räknar man ut arbete?", 
+    back: "Med formeln W = F × s — arbete (W) är kraft (F) gånger sträcka (s). <br><br>Exempel: 10 N × 2 m = 20 J." 
+  },
 
-{ front: "Hur räknar man ut effekt?", 
-  back: "Effekt (P) = arbete (W) ÷ tid (t), alltså P = W / t. <br><br>Exempel: 20 J ÷ 4 s = 5 W." },
+  { front: "Hur räknar man ut effekt?", 
+    back: "Effekt (P) = arbete (W) ÷ tid (t), alltså P = W / t. <br><br>Exempel: 20 J ÷ 4 s = 5 W." 
+  },
 
-{ front: "Hur räknar man ut elektrisk effekt?", 
-  back: "Elektrisk effekt (P) = spänning (U) × ström (I), alltså P = U × I. <br><br>Exempel: 6 V × 2 A = 12 W." }
+  { front: "Hur räknar man ut elektrisk effekt?", 
+    back: "Elektrisk effekt (P) = spänning (U) × ström (I), alltså P = U × I. <br><br>Exempel: 6 V × 2 A = 12 W." 
+  },
 
-  { front: "Hur kan vinden skapa elektricitet?", back: "Vinden snurrar rotorblad → turbin roterar → generator skapar ström genom induktion (magneter får elektroner att röra på sig i koppartråd)." },
+  { front: "Hur kan vinden skapa elektricitet?", 
+    back: "Vinden snurrar rotorblad → turbin roterar → generator skapar ström genom induktion (magneter får elektroner att röra på sig i koppartråd)." 
+  },
 
-  front: "Du puttar en låda med 50 N över 4 meter. Hur stort arbete utförs?", 
-  back: "<b>200 Nm</b><br>Formel: W = F · s<br>Beräkning: 50 N · 4 m = 200 Nm" 
-},
+  { 
+    front: "Du puttar en låda med 50 N över 4 meter. Hur stort arbete utförs?", 
+    back: "<b>200 Nm</b><br>Formel: W = F · s<br>Beräkning: 50 N · 4 m = 200 Nm" 
+  },
 
-{ 
-  front: "En motor gör 600 J arbete på 3 s. Vilken effekt har den?", 
-  back: "<b>200 W</b><br>Formel: P = W / t<br>Beräkning: 600 J / 3 s = 200 W" 
-},
+  { 
+    front: "En motor gör 600 J arbete på 3 s. Vilken effekt har den?", 
+    back: "<b>200 W</b><br>Formel: P = W / t<br>Beräkning: 600 J / 3 s = 200 W" 
+  },
 
-{ 
-  front: "En apparat har 12 V och 3 A. Vilken effekt ger den?", 
-  back: "<b>36 W</b><br>Formel: P = U · I<br>Beräkning: 12 V · 3 A = 36 W" 
-},
-
+  { 
+    front: "En apparat har 12 V och 3 A. Vilken effekt ger den?", 
+    back: "<b>36 W</b><br>Formel: P = U · I<br>Beräkning: 12 V · 3 A = 36 W" 
+  },
 
   { front: "Nämn några energiformer.", back: "• Rörelseenergi<br>• Lägesenergi<br>• Värmeenergi<br>• Elektrisk energi<br>• Strålningsenergi<br>• Kemisk energi" },
 
