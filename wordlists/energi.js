@@ -15,11 +15,11 @@ const words = [
 
   { front: "Vad menas med energiomvandling?", back: "När energi övergår från en form till en annan.<br><br>Ex: rörelseenergi → elektrisk energi." },
 
-  { front: "Vad innebär energikvalitet?", back: "Hur användbar en energiform är.<br><br>Hög kvalitet: <b>elektrisk energi</b><br>Låg kvalitet: <b>värmeenergi</b>" },
+  { front: "Vad innebär energikvalitet?", back: "Hur användbar en energiform är.<br><br>Energi går från hög kvalitet till låg kvalitet. Den är hela tiden lika stor men den blir mindre användbar. Exempel: energin från maten du äter är mer användbar (har högre kvalitet) än värmen (37 grader) som din kropp strålar ut. Man kan tänka att universums energi går från att vara koncentrerad och användbar till utjämnad och mindre användbar. " },
 
   { front: "Vad är en energikälla?", back: "Något vi kan utvinna energi från, t.ex. solen, vind, vatten eller fossila bränslen." },
 
-  { front: "Vad menas med en energikedja?", back: "Visar stegvisa energiomvandlingar.<br><br>Ex: solljus (strålningsenergi) → vatten stiger (får lägesenergi) → vatten faller (rörelseenergi) → vattenkraftverk får elektroner att röra sig (elektrisk energi) → elvisp snurrar (rörelseenergi och värme" },
+  { front: "Vad menas med en energikedja?", back: "Visar stegvisa energiomvandlingar.<br><br>Exempel: solljus (strålningsenergi) → vatten stiger (får lägesenergi) → vatten faller (rörelseenergi) → vattenkraftverk får elektroner att röra sig (elektrisk energi) → elvisp snurrar (rörelseenergi och värme)" },
 
   { front: "Vad är en förnybar energikälla?", back: "En energikälla som fylls på naturligt.<br><br>Ex: sol, vind, vatten, biomassa." },
 
