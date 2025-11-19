@@ -15,33 +15,35 @@ const words = [
 
   { front: "Vad menas med energiomvandling?", back: "När energi övergår från en form till en annan.<br><br>Ex: rörelseenergi → elektrisk energi." },
 
-  { front: "Vad innebär energikvalitet?", back: "Hur användbar en energiform är.<br><br>Energi går från hög kvalitet till låg kvalitet. Den är hela tiden lika stor men den blir mindre användbar. Exempel: energin från maten du äter är mer användbar (har högre kvalitet) än värmen (37 grader) som din kropp strålar ut. Man kan tänka att universums energi går från att vara koncentrerad och användbar till utjämnad och mindre användbar. " },
+  { front: "Vad innebär energikvalitet?", back: "Hur <b>användbar</b> en energiform är.<br><br>Energi går från hög kvalitet till låg kvalitet. Den är hela tiden lika stor men den blir mindre användbar. Exempel: energin från maten du äter är mer användbar (har högre kvalitet) än värmen som din kropp strålar ut.  " },
 
   { front: "Vad är en energikälla?", back: "Något vi kan utvinna energi från, t.ex. solen, vind, vatten eller fossila bränslen." },
 
-  { front: "Vad menas med en energikedja?", back: "Visar stegvisa energiomvandlingar.<br><br>Exempel: solljus (strålningsenergi) → vatten stiger (får lägesenergi) → vatten faller (rörelseenergi) → vattenkraftverk får elektroner att röra sig (elektrisk energi) → elvisp snurrar (rörelseenergi och värme)" },
+  { front: "Vad menas med en energikedja?", back: "Visar stegvisa energiomvandlingar.<br><br>Exempel: <br>solljus (<b>strålningsenergi</b>) → <br>vatten stiger (får <b>lägesenergi</b>) → <br>vatten faller (<b>rörelseenergi</b>) → <br>vattenkraftverk får elektroner att röra sig (<b>elektrisk energi</b>) → <br>elvisp snurrar (<b>rörelseenergi</b> och <b>värme</b>)" },
 
   { front: "Vad är en förnybar energikälla?", back: "En energikälla som fylls på naturligt.<br><br>Ex: sol, vind, vatten, biomassa." },
 
-  { front: "Vad är en icke förnybar energikälla?", back: "En energikälla som inte återskapas snabbt.<br><br>Ex: olja, kol, naturgas." },
+  { front: "Vad är en icke förnybar energikälla?", back: "En energikälla som inte återskapas snabbt och som kommer att ta slut.<br><br>Ex: olja, kol, naturgas." },
 
-  { front: "Vad gör en generator?", back: "Omvandlar <b>rörelseenergi</b> till <b>elektrisk energi</b> genom induktion." },
+  { front: "Vad gör en generator?", back: "Omvandlar <b>rörelseenergi</b> till <b>elektrisk energi</b> genom induktion (magneter rör sig och får elektroner att röra sig i våra ledningar)." },
 
-  { front: "Vad är en turbin?", back: "En propellerliknande del som snurrar av vatten, vind eller ånga och driver en generator." },
+  { front: "Vad är en turbin?", back: "En propellerliknande del som snurrar av t.ex. vatten, vind eller ånga och driver en generator." },
 
-  { front: "Vad gör en kondensor i ett kraftverk?", back: "Kyl ner ånga så att den blir vatten igen, så processen kan fortsätta." },
+  { front: "Vad gör en kondensor i ett kraftverk?", back: "Kyler ner ånga så att den blir vatten igen, så processen kan fortsätta." },
 
-  { front: "Vad är elektromagnetisk induktion?", back: "En elektrisk ström skapas när en ledare rör sig i ett magnetfält." },
+  { front: "Vad är elektromagnetisk induktion?", back: "En elektrisk ström skapas när en ledare (t.ex. koppartråd) rör sig i ett magnetfält." },
 
-  { front: "Vad används formeln W = F × s till?", back: "Att beräkna arbete: kraft × sträcka." },
+{ front: "Hur räknar man ut arbete?", 
+  back: "Med formeln W = F × s — arbete (W) är kraft (F) gånger sträcka (s). <br><br>Exempel: 10 N × 2 m = 20 J."" },
 
-  { front: "Vad visar formeln P = U × I?", back: "Elektrisk effekt.<br><br><b>Effekt (P) = spänning (U) × ström (I)</b>." },
+{ front: "Hur räknar man ut effekt?", 
+  back: "Effekt (P) = arbete (W) ÷ tid (t), alltså P = W / t. <br><br>Exempel: 20 J ÷ 4 s = 5 W." },
 
-  { front: "Vad används formeln P = W / t till?", back: "Att räkna ut effekt (P) genom arbete (W) delat med tid (t)." },
+{ front: "Hur räknar man ut elektrisk effekt?", 
+  back: "Elektrisk effekt (P) = spänning (U) × ström (I), alltså P = U × I. <br><br>Exempel: 6 V × 2 A = 12 W." }
 
   { front: "Hur kan vinden skapa elektricitet?", back: "Vinden snurrar rotorblad → turbin roterar → generator skapar ström genom induktion (magneter får elektroner att röra på sig i koppartråd)." },
 
-{ 
   front: "Du puttar en låda med 50 N över 4 meter. Hur stort arbete utförs?", 
   back: "<b>200 Nm</b><br>Formel: W = F · s<br>Beräkning: 50 N · 4 m = 200 Nm" 
 },
@@ -67,13 +69,13 @@ const words = [
 
   { front: "Skillnad mellan förnybara och icke förnybara energikällor?", back: "Förnybara tar inte slut och fylls på naturligt.<br><br>Icke förnybara finns i begränsad mängd och ger mer utsläpp." },
 
-  { front: "Fördel och nackdel med vindkraft?", back: "<b>Fördel:</b> Förnybar, utsläppsfri.<br><br><b>Nackdel:</b> Vind varierar." },
+  { front: "Fördelar och nackdelar med vindkraft?", back: "Exempel:<br><br><b>Fördel:</b> Förnybar, utsläppsfri.<br><br><b>Nackdel:</b> Vind varierar." },
 
-  { front: "Fördel och nackdel med vattenkraft?", back: "<b>Fördel:</b> Stabil, styrbar energi.<br><br><b>Nackdel:</b> Påverkar ekosystem." },
+  { front: "Fördelar och nackdelar med vattenkraft?", back: "Exempel:<br><br><b>Fördel:</b> Stabil, styrbar energi.<br><br><b>Nackdel:</b> Påverkar ekosystem." },
 
-  { front: "Fördel och nackdel med solenergi?", back: "<b>Fördel:</b> Förnybar och miljövänlig.<br><br><b>Nackdel:</b> Producerar bara när solen lyser." },
+  { front: "Fördelar och nackdelar med solenergi?", back: "Exempel:<br><br><b>Fördel:</b> Förnybar och miljövänlig.<br><br><b>Nackdel:</b> Producerar bara när solen lyser." },
 
-  { front: "Fördel och nackdel med kärnkraft?", back: "<b>Fördel:</b> Mycket energi, nästan fossilfri.<br><br><b>Nackdel:</b> Radioaktivt avfall och risk för olyckor." },
+  { front: "Fördelar och nackdelar med kärnkraft?", back: "Exempel:<br><br><b>Fördel:</b> Mycket energi, nästan fossilfri.<br><br><b>Nackdel:</b> Radioaktivt avfall och risk för olyckor." },
 
-  { front: "Fördel och nackdel med fossila bränslen?", back: "<b>Fördel:</b> Lätt att lagra och använda.<br><br><b>Nackdel:</b> Stora utsläpp." }
+  { front: "Fördelar och nackdelar med fossila bränslen?", back: "Exempel:<br><br><b>Fördel:</b> Lätt att lagra och använda.<br><br><b>Nackdel:</b> Stora utsläpp." }
 ];
