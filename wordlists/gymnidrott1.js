@@ -1,0 +1,61 @@
+const wordlisttitle = "Öva på begrepp om muskulära systemet, syresättning, nervsystemet och energigivande processer";
+
+const words = [
+  { front: "Hjärtmuskel", back: "Muskeltyp som endast finns i hjärtat. <br><br><b>Arbetar hela livet</b> utan viljestyrning." },
+  { front: "Glattmuskler", back: "Muskler i organ som <i>mage, tarmar och blodkärl</i>. <br><br>Arbetar automatiskt." },
+  { front: "Skelettmuskler", back: "Viljestyrda muskler som sitter fast i skelettet och gör rörelse möjlig." },
+  { front: "Muskelbuk", back: "Den <b>tjocka, mittre</b> delen av en muskel." },
+  { front: "Muskelfiberbuntar", back: "Grupper av muskelfibrer som ligger samlade i små buntar." },
+  { front: "Muskelfibrer", back: "Långa muskelceller som skapar kraft genom att <i>dras ihop</i>." },
+  { front: "Myofibriller", back: "Tunna trådar i muskelfibrerna där <b>muskelkontraktionen</b> sker." },
+  { front: "Muskelfibertyp 1", back: "Långsamma och uthålliga fibrer. <br><br>Bra vid långvarigt arbete." },
+  { front: "Muskelfibertyp 2a", back: "Snabbare och starkare än typ 1. <br><br>Relativt uthålliga." },
+  { front: "Muskelfibertyp 2x", back: "Mycket snabba och starka men tröttnar snabbt. <br><br>Används vid explosiva rörelser." },
+  { front: "Antagonister", back: "Muskler som arbetar i <b>motsatt riktning</b>, t.ex. biceps och triceps." },
+  { front: "Synergister", back: "Muskler som samarbetar i samma rörelse." },
+  { front: "Koncentrisk kontraktion", back: "När en muskel <b>drar ihop sig och blir kortare</b>." },
+  { front: "Isometrisk kontraktion", back: "När muskeln arbetar <i>utan att ändra längd</i>, t.ex. hålla något stilla." },
+  { front: "Excentrisk kontraktion", back: "När muskeln arbetar samtidigt som den <b>blir längre</b>, t.ex. bromsar en rörelse." },
+  { front: "Muskelbunt", back: "En samling muskelfibrer omslutna av bindväv." },
+  { front: "Fascia", back: "Tunt bindvävslager runt muskeln som håller strukturen samman." },
+  { front: "Kontraktionsförmåga", back: "Muskelns förmåga att <b>dra ihop sig</b> och skapa kraft." },
+  { front: "Ämnesomsättning", back: "Hur muskeln omvandlar energi till muskelarbete." },
+
+  // SYRESÄTTNING
+  { front: "Lungor", back: "Organ där kroppen tar upp syre och gör sig av med koldioxid." },
+  { front: "Alveoler", back: "Små lungblåsor där <b>gasutbyte</b> sker mellan luft och blod." },
+  { front: "Bronkioler", back: "De minsta luftvägarna som leder till alveolerna." },
+  { front: "Bronker", back: "Större luftvägar från luftstrupen in i lungorna." },
+  { front: "Gasutbyte", back: "Syre går från alveoler till blodet och koldioxid i motsatt riktning." },
+  { front: "Diffusion", back: "Gaser och vätskor sprids från hög till låg koncentration." },
+  { front: "Slagvolym", back: "Blodmängd hjärtat pumpar ut per hjärtslag." },
+  { front: "Minutvolym", back: "Blodmängd hjärtat pumpar per minut. <br><br><b>Puls × slagvolym</b>." },
+  { front: "Puls", back: "Antal hjärtslag per minut." },
+  { front: "Kapillärnät", back: "Minsta blodkärlen där syre byts mot koldioxid." },
+  { front: "Hemoglobin", back: "Ämne i röda blodkroppar som binder och transporterar syre." },
+
+  // NERVSYSTEMET
+  { front: "Centrala nervsystemet (CNS)", back: "Hjärnan och ryggmärgen. <br><br>Styr kroppens funktioner." },
+  { front: "Perifera nervsystemet (PNS)", back: "Alla nerver som går till muskler, organ och huden." },
+  { front: "Axoner", back: "Långa utskott som leder signaler <i>från</i> nervcellen." },
+  { front: "Dendriter", back: "Korta utskott som tar emot signaler <i>till</i> nervcellen." },
+  { front: "Myelin", back: "Fettlager som isolerar axoner och gör signaler snabbare." },
+  { front: "Nervimpuls", back: "Elektrisk signal som skickas genom nerverna." },
+  { front: "Motorisk enhet", back: "En nerv + alla muskelfibrer den styr." },
+  { front: "Sympatiska nervsystemet", back: "Aktiverar kroppen vid stress: <b>kamp eller flykt</b>." },
+  { front: "Parasympatiska nervsystemet", back: "Står för vila, återhämtning och lugn." },
+  { front: "Feedbacksystem", back: "Justering av rörelser efter att kroppen registrerat vad som hänt." },
+  { front: "Feedforwardsystem", back: "Hjärnan planerar rörelsen innan den utförs." },
+  { front: "Ischiasnerven", back: "Kroppens största nerv – går från ryggen ner i benet." },
+
+  // ENERGIGIVANDE PROCESSER
+  { front: "Anaerob process", back: "Energiproduktion <b>utan syre</b>. <br><br>Snabb energi men mjölksyra bildas." },
+  { front: "Aerob process", back: "Energiproduktion <b>med syre</b>. <br><br>Långsam men effektiv vid uthållighet." },
+  { front: "ATP", back: "Kroppens direkta energimolekyl för muskelarbete." },
+  { front: "Mjölksyra", back: "Restprodukt från anaeroba processer som gör muskler trötta." },
+  { front: "Syreupptagningsförmåga", back: "Hur bra kroppen kan ta upp och använda syre vid arbete." },
+  { front: "Mitokondrie", back: "Cellens kraftverk där aerob energi skapas." },
+  { front: "Glykogen", back: "Lagrade kolhydrater i muskler och lever." },
+  { front: "Glukos", back: "Socker i blodet som används som snabb energi." },
+  { front: "Glykolys", back: "Nedbrytning av glukos/glykogen för att bilda ATP." }
+];
