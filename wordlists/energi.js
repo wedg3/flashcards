@@ -55,12 +55,12 @@ const words = [
 
   { 
     front: "En motor gör 600 J arbete på 3 s. Vilken effekt har den?", 
-    back: "<b>200 W</b><br>Formel: P = W / t<br>Beräkning: 600 J / 3 s = 200 W" 
+    back: "<b>200 W</b><br>Effekt = Arbete / tid. P = W / t<br>Beräkning: 600 J / 3 s = 200 Watt" 
   },
 
   { 
     front: "En apparat har 12 V och 3 A. Vilken effekt ger den?", 
-    back: "<b>36 W</b><br>Formel: P = U · I<br>Beräkning: 12 V · 3 A = 36 W" 
+    back: "<b>36 W</b><br>El-Effekt (P) = Spänning (U) x ström (I) <br>P = U · I<br>Beräkning: 12 V · 3 A = 36 Watt" 
   },
 
   { front: "Nämn några energiformer.", back: "• Rörelseenergi<br>• Lägesenergi<br>• Värmeenergi<br>• Elektrisk energi<br>• Strålningsenergi<br>• Kemisk energi" },
@@ -71,7 +71,7 @@ const words = [
 
   { front: "Ge exempel på en energiomvandling.", back: "Vindens rörelseenergi → elektrisk energi i vindkraftverk." },
 
-  { front: "Skillnad mellan förnybara och icke förnybara energikällor?", back: "Förnybara tar inte slut och fylls på naturligt.<br><br>Icke förnybara finns i begränsad mängd och ger mer utsläpp." },
+  { front: "Skillnad mellan förnybara och icke förnybara energikällor?", back: "Förnybara tar inte slut och fylls på naturligt.<br><br>Icke förnybara finns i begränsad mängd och kommer att ta slut." },
 
   { front: "Fördelar och nackdelar med vindkraft?", back: "Exempel:<br><br><b>Fördel:</b> Förnybar, utsläppsfri.<br><br><b>Nackdel:</b> Vind varierar." },
 
