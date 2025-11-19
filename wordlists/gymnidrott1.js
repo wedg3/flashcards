@@ -1,4 +1,4 @@
-const wordlisttitle = "Öva på begrepp om muskulära systemet, syresättning, nervsystemet och energigivande processer";
+const wordlisttitle = "Idrott: Kroppen";
 
 const words = [
   { front: "Hjärtmuskel", back: "Muskeltyp som endast finns i hjärtat. <br><br><b>Arbetar hela livet</b> utan viljestyrning." },
