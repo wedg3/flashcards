@@ -19,8 +19,7 @@ const words = [
 
   { front: "Vad är en energikälla?", back: "Något vi kan utvinna energi från, t.ex. solen, vind, vatten eller fossila bränslen." },
 
-  { front: "Vad menas med en energikedja?", back: "Visar stegvisa energiomvandlingar.<br><br>Exempel: <br>solljus (<b>strålningsenergi</b>) → <br>vatten stiger (får <b>lägesenergi</b>) → <br>vatten faller (<b>rörelseenergi</b>) → <br>vattenkraftverk får elektroner att röra sig (<b>elektrisk energi</b>) → <br>elvisp snurrar (<b>rörelseenergi</b> och <b>värme</b>)" },
-
+   { front: "Vad menas med en energikedja?", back: "Visar stegvisa energiomvandlingar.<br><br>Exempel: <br>solljus (<b>strålningsenergi</b>) → <br>vatten stiger (får <b>lägesenergi</b>) → <br>vatten faller (<b>rörelseenergi</b>) → <br>vattenkraftverk får elektroner att röra sig (<b>elektrisk energi</b>) → <br>ström av elektroner får magneter i en elvisp att snurra (<b>rörelseenergi</b> och <b>värme</b>)" },
   { front: "Vad är en förnybar energikälla?", back: "En energikälla som fylls på naturligt.<br><br>Ex: sol, vind, vatten, biomassa." },
 
   { front: "Vad är en icke förnybar energikälla?", back: "En energikälla som inte återskapas snabbt och som kommer att ta slut.<br><br>Ex: olja, kol, naturgas." },
