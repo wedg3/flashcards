@@ -1,7 +1,7 @@
 const wordlisttitle = "Öva på begrepp om Hinduismen";
 
 const words = [
-  { front: "Monoteism", back: "När man tror på bara <b>en gud</b> som t.ex. i kristendomen. Hinduismen har ju många gudar och är inte monoteistisk men en del ser det som att den är det för att alla gudar är delar av Brahman." },
+  { front: "Monoteism", back: "När man tror på bara <b>en gud</b> som t.ex. i kristendomen. Hinduismen har ju många gudar och är inte monoteistisk.<b>Men</b> vissa ser det som att den är det ändå eftersom att alla gudar är en delar av något större: Brahman." },
   { front: "Polyteism", back: "När man tror på <b>många gudar</b>. Hinduismen ses ofta som en polyteistisk religion eftersom man ber till många gudar." },
   { front: "Brahman", back: "Den stora <b>världssjälen</b> eller Universums själ. Allt levande är en del av Brahman." },
   { front: "Brahma", back: "Guden som <b>skapar</b> världen." },
@@ -10,7 +10,7 @@ const words = [
   { front: "Ganesha", back: "Guden med elefanthuvud. Hjälper människor att <b>lyckas</b> och få bort hinder." },
   { front: "Avatar", back: "När en gud kommer ner till jorden i en annan form, t.ex. Krishna." },
   { front: "Sanatana Dharma", back: "Hinduismens eget namn. Betyder <b>den eviga religionen</b>." },
-  { front: "Indiens religion", back: "Hinduismen växte fram i Indien och är en stor del av landets kultur." },
+  { front: "Vem kallade det Hinduism?", back: "Storbritannien kallade det för Hinduism. Det betyder ungefär 'Indiernas relgion.' Indierna själva kallar det inte så. " },
   { front: "Kastsystemet", back: "Ett gammalt system som delar in människor i grupper. Ger olika uppgifter och status." },
   { front: "Patriarkala traditioner", back: "Regler som ger män mer makt. Många tycker att dessa bör ändras." },
   { front: "Reinkarnation", back: "Att man <b>återföds</b> efter döden." },
