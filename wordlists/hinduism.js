@@ -1,7 +1,7 @@
 const wordlisttitle = "Begrepp om Hinduismen";
 
 const words = [
-  { front: "Monoteism", back: "När man tror på bara <b>en gud</b> som t.ex. i kristendomen. Hinduismen har ju många gudar och är inte monoteistisk.<b>Men</b> vissa ser det som att den är det ändå eftersom att alla gudar är en delar av något större: Brahman." },
+  { front: "Monoteism", back: "När man tror på bara <b>en gud</b> som t.ex. i kristendomen. Hinduismen har ju många gudar och är inte monoteistisk. <b>Men</b> vissa ser det som att den är det ändå eftersom att alla gudar är en delar av något större: Brahman." },
   { front: "Polyteism", back: "När man tror på <b>många gudar</b>. Hinduismen ses ofta som en polyteistisk religion eftersom man ber till många gudar." },
   { front: "Brahman", back: "Den stora <b>världssjälen</b> eller Universums själ. Allt levande är en del av Brahman." },
   { front: "Brahma", back: "Guden som <b>skapar</b> världen." },
@@ -20,7 +20,7 @@ const words = [
   { front: "Dyrkan av gudar", back: "Man kan be i tempel, hemma, eller ge blommor och frukt till en gudastaty." },
   { front: "Hinduism som kultur", back: "En blandning av tro, traditioner och sätt att leva i vardagen." },
   { front: "Kon helig", back: " Kon symboliserar liv, överflöd (den ger mjölk) och är kopplad till flera gudar. Den får därför mycket respekt." },
-  { front: "Begravning", back: "Många hinduer vill kremeras (bränns) så kroppen kan <b>återgå till naturen</b>." },
+  { front: "Begravning", back: "Många hinduer vill kremeras (brännas) så kroppen kan <b>återgå till naturen</b>." },
   { front: "Tredje könet", back: "Många gudar har både en manlig och kvinnlig sida. I hinduismen talas det om ett tredje kön, t.ex. HBTQ-personer. Vissa vill ett de ska respekteras som en egen grupp i kastsystemet." },
   { front: "Asket", back: "En person som avstår bekvämlighet, nöjen och sex för att få andlig insikt" },
   { front: "Ahimsa", back: "Icke-våld. Levande varelser ska inte dödas eller skadas." },
