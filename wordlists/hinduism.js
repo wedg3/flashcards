@@ -1,0 +1,29 @@
+const wordlisttitle = "Öva på begrepp om Hinduismen";
+
+const words = [
+  { front: "Monoteism (hinduismen)", back: "Hinduismen kan ses som <b>en gud</b> eftersom alla gudar är delar av <b>Brahman</b>." },
+  { front: "Polyteism (hinduismen)", back: "Hinduismen kan ses som <b>många gudar</b> eftersom människor ber till olika gudar." },
+  { front: "Brahman", back: "Den stora <b>världssjälen</b> eller Universums själ. Allt levande är en del av Brahman." },
+  { front: "Brahma", back: "Guden som <b>skapar</b> världen." },
+  { front: "Vishnu", back: "Guden som <b>skyddar</b> världen." },
+  { front: "Shiva", back: "Guden för <b>liv och död</b>. Han kan både förstöra och skapa nytt." },
+  { front: "Ganesha", back: "Guden med elefanthuvud. Hjälper människor att <b>lyckas</b> och få bort hinder." },
+  { front: "Avatar", back: "När en gud kommer ner till jorden i en annan form, t.ex. Krishna." },
+  { front: "Sanatana Dharma", back: "Hinduismens eget namn. Betyder <b>den eviga religionen</b>." },
+  { front: "Indiens religion", back: "Hinduismen växte fram i Indien och är en stor del av landets kultur." },
+  { front: "Kastsystemet", back: "Ett gammalt system som delar in människor i grupper. Ger olika uppgifter och status." },
+  { front: "Patriarkala traditioner", back: "Regler som ger män mer makt. Många tycker att detta bör ändras." },
+  { front: "Reinkarnation", back: "Att man <b>återföds</b> efter döden." },
+  { front: "Karma", back: "Det du gör får följder. Bra handlingar ger bra karma och man föds till något bättre i nästa liv." },
+  { front: "Samsara", back: "Kretsloppet av <b>födelse och återfödelse</b>." },
+  { front: "Moksha", back: "Slutet på återfödelsen. Själen (Atman) förenas med Brahman." },
+  { front: "Dyrkan av gudar", back: "Man kan be i tempel, hemma, eller ge blommor och frukt till en gudastaty." },
+  { front: "Hinduism som kultur", back: "En blandning av tro, traditioner och sätt att leva i vardagen." },
+  { front: "Kon helig", back: "Kon ses som lugn och livgivande och får därför mycket respekt." },
+  { front: "Begravning", back: "Många hinduer vill kremeras (bränns) så kroppen kan <b>återgå till naturen</b>." },
+  { front: "Tredje könet", back: "I Indien finns grupper som inte är man eller kvinna, t.ex. hijras." },
+  { front: "Ganges", back: "Den heligaste floden. Många badar där för att bli rena." },
+  { front: "Divali", back: "Ljusfesten. Man tänder ljus och firar att det goda vinner över det onda." },
+  { front: "Holi", back: "Färgfesten. Man kastar färger och firar att våren kommer." },
+  { front: "Navaratri", back: "Fest för gudinnan Durga. Man dansar och ber i flera dagar." }
+];
