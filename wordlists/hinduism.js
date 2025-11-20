@@ -15,7 +15,7 @@ const words = [
   { front: "Patriarkala traditioner", back: "Regler som ger män mer makt. Många tycker att dessa bör ändras." },
   { front: "Reinkarnation", back: "Att man <b>återföds</b> efter döden." },
   { front: "Karma", back: "Det du gör får följder. Bra handlingar ger bra karma och man föds till något bättre i nästa liv." },
-  { front: "Samsara", back: "<a href="www.google.com">Kretsloppet</a> av <b>födelse och återfödelse</b>." },
+  { front: "Samsara", back: "Kretsloppet av <b>födelse och återfödelse</b>." },
   { front: "Moksha", back: "Slutet på återfödelsen. Själen (Atman) förenas med Brahman (universums själ)." },
   { front: "Dyrkan av gudar", back: "Man kan be i tempel, hemma, eller ge blommor och frukt till en gudastaty." },
   { front: "Hinduism som kultur", back: "En blandning av tro, traditioner och sätt att leva i vardagen." },
