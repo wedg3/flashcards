@@ -1,4 +1,4 @@
-const wordlisttitle = "Öva på begrepp om Hinduismen";
+const wordlisttitle = "Begrepp om Hinduismen";
 
 const words = [
   { front: "Monoteism", back: "När man tror på bara <b>en gud</b> som t.ex. i kristendomen. Hinduismen har ju många gudar och är inte monoteistisk.<b>Men</b> vissa ser det som att den är det ändå eftersom att alla gudar är en delar av något större: Brahman." },
@@ -7,15 +7,15 @@ const words = [
   { front: "Brahma", back: "Guden som <b>skapar</b> världen." },
   { front: "Vishnu", back: "Guden som <b>skyddar</b> världen." },
   { front: "Shiva", back: "Guden för <b>liv och död</b>. Han kan både förstöra och skapa nytt." },
-  { front: "Ganesha", back: "Guden med elefanthuvud. Hjälper människor att <b>lyckas</b> och få bort hinder." },
+  { front: "Ganesha", back: "Guden med elefanthuvud. Vishetens gud. Hjälper också människor att <b>lyckas</b> och få bort hinder." },
   { front: "Avatar", back: "När en gud kommer ner till jorden i en annan form, t.ex. Krishna." },
   { front: "Sanatana Dharma", back: "Hinduismens eget namn. Betyder <b>den eviga religionen</b>." },
   { front: "Vem kallade det Hinduism?", back: "Storbritannien kallade det för Hinduism. Det betyder ungefär 'Indiernas relgion.' Indierna själva kallar det inte så. " },
-  { front: "Kastsystemet", back: "Ett gammalt system som delar in människor i grupper. Ger olika uppgifter och status." },
+  { front: "Kastsystemet", back: "Ett gammalt system som delar in människor i grupper. Vilken kast/grupp man tillhör beror på karma i sitt tidigare liv." },
   { front: "Patriarkala traditioner", back: "Regler som ger män mer makt. Många tycker att dessa bör ändras." },
   { front: "Reinkarnation", back: "Att man <b>återföds</b> efter döden." },
   { front: "Karma", back: "Det du gör får följder. Bra handlingar ger bra karma och man föds till något bättre i nästa liv." },
-  { front: "Samsara", back: "Kretsloppet av <b>födelse och återfödelse</b>." },
+  { front: "Samsara", back: "<a href="www.google.com">Kretsloppet</a> av <b>födelse och återfödelse</b>." },
   { front: "Moksha", back: "Slutet på återfödelsen. Själen (Atman) förenas med Brahman (universums själ)." },
   { front: "Dyrkan av gudar", back: "Man kan be i tempel, hemma, eller ge blommor och frukt till en gudastaty." },
   { front: "Hinduism som kultur", back: "En blandning av tro, traditioner och sätt att leva i vardagen." },
