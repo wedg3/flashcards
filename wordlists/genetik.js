@@ -35,10 +35,10 @@ const words = [
 
   { front: "Genteknik", back: "Teknik där man <b>förändrar arvsmassan</b> hos en organism.<br><br><b>Nytta:</b> t.ex. medicin, grödor, insulin.<br><br><b>Risker:</b> etiska frågor, spridning i naturen." },
 
-  { front: "Korsningsschema (svart × svart)", back: "Homozygot svart (SS) × heterozygot svart (Ss):<br>→ 50% SS, 50% Ss<br><br><b>Alla får svart päls.</b>" },
-
-  { front: "Korsningsschema (vit × svart)", back: "Vit är recessiv (ss).<br><br>ss × Ss → 50% Ss (svart), 50% ss (vit).<br><br><b>Hälften svarta, hälften vita.</b>" },
-
+ {
+  front: "Korsningsschema",
+  back: "Ett korsningsschema används för att visa vilka genkombinationer avkomman kan få. Det hjälper oss att räkna ut sannolikheten för olika egenskaper hos avkomman. <b>Se boken för exempel!</b>"
+}
 { 
   front: "Genteknik – exempel", 
   back: "<b>Exempel på användning av genteknik:</b><br><br>\
