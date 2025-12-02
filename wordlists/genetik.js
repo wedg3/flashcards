@@ -1,4 +1,4 @@
-const wordlisttitle = "Öva på begrepp om genetik och genteknik";
+const wordlisttitle = "Genetikbegrepp";
 
 const words = [
   { front: "Genetik", back: "<b>Ärftlighetslära.</b><br><br>Handlar om hur egenskaper förs vidare mellan generationer." },
