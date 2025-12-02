@@ -38,7 +38,7 @@ const words = [
  {
   front: "Korsningsschema",
   back: "Ett korsningsschema används för att visa vilka genkombinationer avkomman kan få. Det hjälper oss att räkna ut sannolikheten för olika egenskaper hos avkomman. <b>Se boken för exempel!</b>"
-}
+},
 { 
   front: "Genteknik – exempel", 
   back: "<b>Exempel på användning av genteknik:</b><br><br>\
