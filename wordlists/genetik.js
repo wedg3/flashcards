@@ -47,6 +47,15 @@ const words = [
 • Skapa <b>GMO</b> för att förbättra egenskaper<br>\
 • Identifiera sjukdomsgener<br><br>\
 <i>Ger stora möjligheter – men väcker också etiska frågor.</i>" 
-}
+},
+
+    { 
+    front: "Homozygot", 
+    back: "När en individ har <b>två likadana anlag</b> för en viss gen.<br><br>Exempel: <b>SS</b> eller <b>vv</b>." 
+  },
+  { 
+    front: "Heterozygot", 
+    back: "När en individ har <b>två olika anlag</b> för en viss gen.<br><br>Exempel: <b>Sv</b>." 
+  }
 
 ];
