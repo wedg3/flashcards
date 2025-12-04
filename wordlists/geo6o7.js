@@ -9,11 +9,7 @@ const words = [
 
   { front: "De första städerna", back: "Byggdes för ca 5000 år sedan i nuvarande Irak. De ingick i de tidiga <b>flodkulturerna</b> i Pakistan, Irak, Egypten och Kina." },
 
-  { front: "Flodkulturer", back: "Tidiga civilisationer som uppstod vid stora floder där vatten, odling och handel var möjliga." },
-
   { front: "Varför byggdes städer vid floder?", back: "<b>Vatten</b> året runt, <b>matproduktion</b>, <b>handel</b>, <b>transporter</b> och <b>rengöring</b>." },
-
-  { front: "Saltproblemet i Mesopotamien", back: "Flodvatten som dunstade lämnade kvar salt → <i>marken blev obrukbar</i>." },
 
   { front: "Absolut läge", back: "Platsens naturgivna förutsättningar, t.ex. klimat, vatten och jordmån." },
 
