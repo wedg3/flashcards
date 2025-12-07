@@ -124,7 +124,7 @@ const words = [
   { front: "Hur påverkades Latinamerika och Haiti av revolutionen?", 
     back: "• Slavarna på Haiti gjorde uppror → <b>Haiti självständigt</b><br>• Latinamerikanska kolonier blev <b>självständiga</b>" },
 
-     front: "Beskriv de 5 viktigaste idéerna av Montesquieu.",
+   {   front: "Beskriv de 5 viktigaste idéerna av Montesquieu.",
     back: 
       "• <b>Maktdelning</b> – statens makt ska delas i tre delar för att förhindra tyranni.<br><br>" +
       "• <b>Lagarnas anda</b> – lagar måste anpassas efter varje lands kultur och förutsättningar.<br><br>" +
