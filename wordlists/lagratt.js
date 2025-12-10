@@ -1,5 +1,4 @@
-
-const wordlisttitle = "Öva på begrepp om brott, rättegång och påföljder";
+const wordlisttitle = "Lag & Rätt";
 
 const words = [
   { front: "Häleri", back: "När någon köper, säljer eller gömmer något som är stulet." },
@@ -44,5 +43,38 @@ const words = [
   { front: "Polisstat", back: "Ett land där polisen och staten har mycket makt och där människors frihet kan vara begränsad." },
 
   { front: "Gången vid brott", 
-    back: "1. *Brott begås*.<br><br>2. *Gripande*.<br><br>3. *Anhållan*.<br><br>4. *Häktning*.<br><br>5. *Rättegång*.<br><br>6. *Dom*.<br><br>7. *Påföljd* (straff)." }
+    back: "1. *Brott begås*.<br><br>2. *Gripande*.<br><br>3. *Anhållan*.<br><br>4. *Häktning*.<br><br>5. *Rättegång*.<br><br>6. *Dom*.<br><br>7. *Påföljd* (straff)." },
+	
+	  { front: "Varför har vi lagar i ett samhälle?", 
+    back: "Lagar finns för att skapa ordning och trygghet i samhället.<br><br>De skyddar människor och deras rättigheter.<br><br>Utan lagar skulle konflikter vara svåra att lösa." },
+
+  { front: "Hur påverkar lagar och normer varandra?", 
+    back: "Normer kan ligga till grund för vilka lagar som skapas.<br><br>Lagar kan också förändra normer över tid genom att påverka hur människor beter sig.<br><br>Båda styr hur vi förväntas agera." },
+
+  { front: "Vem stiftar lagar och var kan man läsa dem?", 
+    back: "Riksdagen stiftar Sveriges lagar.<br><br>Regeringen lämnar oftast förslag till nya lagar, s.k. propositioner.<br><br>Lagar finns att läsa i **Sveriges lagbok** och på **riksdagens** eller **regeringens** webbplatser." },
+
+  { front: "Vilka domstolar finns i Sverige och vad gör de?", 
+    back: "Det finns allmänna domstolar: tingsrätt, hovrätt och Högsta domstolen.<br><br>De hanterar bland annat brottmål och tvistemål.<br><br>Det finns också förvaltningsdomstolar som avgör mål mellan privatpersoner och myndigheter." },
+
+  { front: "Vad händer från att ett brott begås tills en påföljd bestäms?", 
+    back: "Polisen utreder brottet genom en förundersökning.<br><br>Åklagaren beslutar om åtal ska väckas.<br><br>Domstolen avgör om personen är skyldig och bestämmer påföljden." },
+
+  { front: "Vilka olika brott kan du ge exempel på?", 
+    back: "Exempel på brott är **stöld, rån, misshandel och skadegörelse**.<br><br>Det finns också trafikbrott som fortkörning.<br><br>Ekonomiska brott som bedrägeri är också vanliga." },
+
+  { front: "Vilka olika påföljder kan du ge exempel på?", 
+    back: "Exempel på påföljder är **böter, fängelse och villkorlig dom**.<br><br>Andra är **skyddstillsyn** och **samhällstjänst**.<br><br>Unga kan få exempelvis **ungdomsvård** eller **ungdomstjänst**." },
+
+  { front: "Vad är kriminalvårdens uppgifter?", 
+    back: "Kriminalvården ansvarar för fängelser, frivård och häkten.<br><br>De ska se till att straffen verkställs på ett säkert sätt.<br><br>De arbetar också för att personer inte ska begå nya brott." },
+
+  { front: "Varför kan människor begå brott?", 
+    back: "Människor kan begå brott på grund av sociala och ekonomiska problem.<br><br>Påverkan från andra eller missbruk kan också spela in.<br><br>Ibland handlar det om personliga konflikter eller impulser." },
+
+  { front: "Hur kan ett brott påverka gärningspersonen, brottsoffret och samhället?", 
+    back: "Gärningspersonen kan få påföljder som påverkar framtiden.<br><br>Brottsoffret kan drabbas känslomässigt, fysiskt och ekonomiskt.<br><br>Samhället påverkas genom ökade kostnader och minskad trygghet." },
+
+  { front: "Vad är skillnaden mellan en rättsstat och en polisstat?", 
+    back: "I en rättsstat är alla lika inför lagen och rättssäkerhet är central.<br><br>I en polisstat har myndigheter stor makt och medborgarnas friheter är begränsade.<br><br>Rättsstaten skyddar individen, medan polisstaten kontrollerar den." }
 ];
