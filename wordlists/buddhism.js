@@ -1,8 +1,8 @@
-const wordlisttitle = "Öva på begrepp om buddhism – lätt svenska";
+const wordlisttitle = "Buddhism";
 
 const words = [
   { front: "Atman", 
-    back: "Ett ord från hinduismen. Det betyder <b>själv</b> eller den inre själen." },
+    back: "Ett ord från hinduismen. Människans själ. Det betyder <b>själv</b> eller den inre själen." },
 
   { front: "Karma", 
     back: "Det du gör får följder. <br><br><b>Goda handlingar → god karma</b>. <br><b>Dåliga handlingar → dålig karma</b>." },
@@ -17,7 +17,7 @@ const words = [
     back: "Buddhismens heliga texter i Theravada. <br><br>Tre delar: <b>regler</b>, <b>läran</b> och <b>andra texter</b>." },
 
   { front: "De fyra ädla sanningarna", 
-    back: "1. Det finns lidande. <br>2. Lidandet har en orsak (begär). <br>3. Lidandet kan sluta. <br>4. Man följer den åttafaldiga vägen för att slippa lidandet." },
+    back: "1. Det finns lidande. <br>2. Lidandet har en orsak (begär). <br>3. Lidandet kan sluta. <br>4. Man släcker sina begär och följer den åttafaldiga vägen för att slippa lidandet." },
 
   { front: "Den åttafaldiga vägen", 
     back: "En väg att leva på för att må bättre och nå nirvana. <br><br>Handlar om att tänka rätt, göra rätt och vara omtänksam." },
