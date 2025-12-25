@@ -4,7 +4,7 @@ const words = [
   { front: "Med vilka metoder menade upplysningen att det gick att göra världen bättre?", 
     back: "Genom <b>utbildning</b>, <b>vetenskap</b> och <b>förnuft</b>." },
 
-  { front: "Vad menade de med att människan var som ett oskrivet blad (tabula rasa)?", 
+  { front: "Vad menades med att människan var som ett oskrivet blad (tabula rasa)?", 
     back: "Människan föds som ett <i>oskrivet blad</i> och formas av erfarenheter.<br><br>Alla människor är skapade lika och kan utvecklas genom <b>uppfostran</b>, <b>bra levnadsvillkor</b> och <b>utbildning</b>." },
 
   { front: "Hur såg Voltaire på tolerans?", 
