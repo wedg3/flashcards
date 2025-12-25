@@ -1,7 +1,7 @@
 const wordlisttitle = "Träningslära (Kap 2)";
 
 const words = [
-  { front: "Specifika mål", back: "Mål som är **tydliga och konkreta** – du vet exakt vad du vill uppnå." },
+  { front: "Specifika mål", back: "Mål som är *tydliga och konkreta* – du vet exakt vad du vill uppnå." },
   { front: "Kortsiktiga mål", back: "Mål som ska nås inom nära framtid, t.ex. **veckor eller någon månad**." },
   { front: "Långsiktiga mål", back: "Mål som tar längre tid och kräver en plan över **flera månader eller längre**." },
 
