@@ -5,9 +5,30 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Flashcards – Wordlists</title>
   <style>
-    body{font-family:system-ui,Segoe UI,Roboto,Arial;margin:24px;max-width:900px}
-    a{display:block;padding:10px 0;text-decoration:none;border-bottom:1px solid #ddd}
-    small{color:#666}
+  <style>
+:root {
+  --grad1: #feac5e;
+  --grad2: #c779d0;
+  --grad3: #4bc0c8;
+  --bg: linear-gradient(135deg, var(--grad1), var(--grad2) 45%, var(--grad3) 100%);
+  --front-bg: linear-gradient(145deg, #5e548e 0%, #231942 70%, #0e0a1f 100%);
+  --back-bg: linear-gradient(145deg, #0a3a4a 0%, #0a2232 70%, #02141a 100%);
+  --text: #fffaf7;
+  --muted: #e6e6e6cc;
+  --border: #ffffff;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background: var(--bg);
+  color: var(--text);
+  text-align: center;
+}
+.wrap { width: min(920px, 90vw); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+
   </style>
 </head>
 <body>
