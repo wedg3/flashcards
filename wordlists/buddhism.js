@@ -2,7 +2,7 @@ const wordlisttitle = "Buddhism";
 
 const words = [
   { front: "Atman", 
-    back: "Ett ord från hinduismen. Människans själ. Det betyder <b>själv</b> eller den inre själen." },
+    back: "Ett ord från hinduismen. Människans själ. Det betyder <b>"självet"</b> eller den inre själen." },
 
   { front: "Karma", 
     back: "Det du gör får följder. <br><br><b>Goda handlingar → god karma</b>. <br><b>Dåliga handlingar → dålig karma</b>." },
