@@ -1,4 +1,4 @@
-const wordlisttitle = "Öva på begrepp om Andra världskriget";
+const wordlisttitle = "Högstadiet: Andra världskriget";
 
 const words = [
   
