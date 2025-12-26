@@ -1,4 +1,4 @@
-const wordlisttitle = "Buddhism";
+const wordlisttitle = "Högstadiet: Buddhism";
 
 const words = [
   { front: "Atman", 
