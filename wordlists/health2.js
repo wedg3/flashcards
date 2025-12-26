@@ -1,4 +1,4 @@
-const wordlisttitle = "Hälsofrämjande arbete och folkhälsoperspektiv";
+const wordlisttitle = "Folkhälsa: Hälsofrämjande arbete och folkhälsoperspektiv";
 
 const words = [
   { front: "Salutogent perspektiv", back: "Fokus på <b>vad som skapar hälsa</b> (inte vad som orsakar sjukdom).<br><br>Kopplat till <i>Antonovsky</i>." },
