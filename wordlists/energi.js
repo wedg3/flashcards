@@ -1,4 +1,4 @@
-const wordlisttitle = "Energi och energikällor";
+const wordlisttitle = "Högstadiet: Energi och energikällor";
 
 const words = [
   { front: "Vad är energi och vilken enhet mäts den i?", back: "Energi är förmågan att utföra arbete eller orsaka förändring.<br><br>Den mäts i <b>joule (J)</b>." },
