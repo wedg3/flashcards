@@ -1,4 +1,4 @@
-const wordlisttitle = "Öva Samhällsekonomi";
+const wordlisttitle = "Högstadiet: Samhällsekonomi";
 
 const words = [
   { front: "Aktieägare", back: "En person som äger en del av ett företag genom aktier.<br><br><b>Får del av vinsten</b>." },
