@@ -1,4 +1,4 @@
-const wordlisttitle = "Lag & Rätt";
+const wordlisttitle = "Högstadiet: Lag & Rätt";
 
 const words = [
   { front: "Häleri", back: "När någon köper, säljer eller gömmer något som är stulet." },
