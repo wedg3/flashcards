@@ -1,4 +1,4 @@
-const wordlisttitle = "Jane Wills";
+const wordlisttitle = "Folkhälsa: Jane Wills";
 
 const words = [
   { front: "Hur definieras hälsa och vilka perspektiv finns?", back: "Hälsa ses som **fysiskt, psykiskt och socialt välbefinnande**, inte bara frånvaro av sjukdom. <br><br> Kan förstås medicinskt (biologiskt fokus), holistiskt (helhetssyn) eller socialt (påverkad av livsvillkor och samhälle)." },
