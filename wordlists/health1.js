@@ -1,4 +1,4 @@
-const wordlisttitle = "Wills (2023), Nutbeam (2022) och Cross et al. (2017)";
+const wordlisttitle = "Folkhälsa: Wills, Nutbeam och Cross";
 
 const words = [
   { front: "Hälsa (Health)", back: "Fysiskt, psykiskt och socialt välbefinnande – inte bara frånvaro av sjukdom." },
