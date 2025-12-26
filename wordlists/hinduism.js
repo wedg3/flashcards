@@ -1,4 +1,4 @@
-const wordlisttitle = "Begrepp om Hinduismen";
+const wordlisttitle = "Högstadiet: Hinduism";
 
 const words = [
   { front: "Monoteism", back: "När man tror på bara <b>en gud</b> som t.ex. i kristendomen. Hinduismen har ju många gudar och är inte monoteistisk. <b>Men</b> vissa ser det som att den är det ändå eftersom att alla gudar är en delar av något större: Brahman." },
