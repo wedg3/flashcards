@@ -1,4 +1,4 @@
-const wordlisttitle = "Demokrati, rättsstat och medier";
+const wordlisttitle = "Gymn: Demokrati, rättsstat och medier";
 
 const words = [
   { front: "Majoritetsprincipen", back: "Majoritetens förslag vinner över minoritetens. <br><br><em>Viktigt:</em> Majoriteten ska styra men minoriteter får inte förtryckas (t.ex. samer i Sverige)." },
