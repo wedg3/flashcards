@@ -1,4 +1,4 @@
-const wordlisttitle = "Demografibegrepp";
+const wordlisttitle = "Högstadiet: Geografi - Demografi";
 
 const words = [
   { front: "Varför spred vi ut oss?", back: "När befolkningen ökade behövde människor nya platser att överleva på. Obefolkade platser saknade <b>vatten</b>, <b>mat</b> och <b>skydd</b>." },
