@@ -86,11 +86,16 @@ async function load(){
     }));
     results.push(...chunkResults);
   }
+  
+  results.sort((a, b) =>
+  a.title.localeCompare(b.title, "en", { sensitivity: "base" })
+);
+  
 
-  const html = results.map(({name, title}) => {
-    const url = `${basePage}?wordlist=${encodeURIComponent(name)}`;
-    return `<a href="${url}"><b>${title}</b><br/><small>${name}</small></a>`;
-  }).join("");
+const html = results.map(({name, title}) => {
+  const url = `${basePage}?wordlist=${encodeURIComponent(name)}`;
+  return `<a href="${url}"><b>${title}</b></a>`;
+}).join("");
 
   document.getElementById("list").innerHTML = html || "<p>No wordlists found.</p>";
 }
