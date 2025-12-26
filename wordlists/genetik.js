@@ -1,4 +1,4 @@
-const wordlisttitle = "Genetikbegrepp";
+const wordlisttitle = "Högstadiet: Genetik";
 
 const words = [
   { front: "Genetik", back: "<b>Ärftlighetslära.</b><br><br>Handlar om hur egenskaper förs vidare mellan generationer." },
