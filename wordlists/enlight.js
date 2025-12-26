@@ -1,4 +1,4 @@
-const wordlisttitle = "Upplysning och Revolution";
+const wordlisttitle = "Gymn: Upplysning och Revolution";
 
 const words = [
   { front: "Med vilka metoder menade upplysningen att det gick att göra världen bättre?", 
