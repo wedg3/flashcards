@@ -1,4 +1,4 @@
-const wordlisttitle = "Quiz: Hälsopromotion och folkhälsa"; 
+const wordlisttitle = "Folkhälsa: Hälsopromotion"; 
 
 const words = [
   { front: "Vad menas med att hälsa är en social konstruktion?", back: "→ Hälsa formas av <b>samhällsnormer, kultur och värderingar</b>, inte bara biologi." },
