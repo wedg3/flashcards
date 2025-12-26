@@ -1,4 +1,4 @@
-const wordlisttitle = "Träningslära (Kap 2)";
+const wordlisttitle = "Gymn: Idrott - Träningslära";
 
 const words = [
   { front: "Specifika mål", back: "Mål som är *tydliga och konkreta* – du vet exakt vad du vill uppnå." },
