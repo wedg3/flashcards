@@ -1,4 +1,4 @@
-const wordlisttitle = "Nutbeam och Cross";
+const wordlisttitle = "Folkhälsa: Nutbeam och Cross";
 
 const words = [
   { front: "Vad är en teori, och varför behövs teorier inom hälsofrämjande arbete?", back: "En teori är ett system av idéer som förklarar varför och hur människor beter sig på ett visst sätt. Teorier används för att planera, motivera och utvärdera insatser. De hjälper oss att förstå vilka faktorer som påverkar hälsa och att välja rätt strategi för rätt målgrupp." },
