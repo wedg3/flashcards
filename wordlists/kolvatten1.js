@@ -1,4 +1,4 @@
-const wordlisttitle = "Öva på begrepp om Vattnets och Kolets kretslopp";
+const wordlisttitle = "Högstadiet: Vattnets och Kolets kretslopp";
 
 const words = [
   { front: "Vilka fasförändringar sker i vattnets kretslopp?", back: "Vatten kan <b>avdunsta</b> (bli gas), <b>kondensera</b> (bli vätska igen) och <b>frysa</b> eller <b>smälta</b> (bli is eller vatten)." },
