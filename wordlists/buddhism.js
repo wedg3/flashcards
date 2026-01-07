@@ -2,7 +2,7 @@ const wordlisttitle = "Högstadiet: Buddhism";
 
 const words = [
   { front: "Atman", 
-   back: "Ett ord från hinduismen. Människans själ. Det betyder <b>\"självet\"</b> eller den inre själen.",
+   back: "Ett ord från hinduismen. Människans själ. Det betyder <i>självet</i> eller den inre själen.",
 
 
 
