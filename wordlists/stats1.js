@@ -1,4 +1,4 @@
-const wordlisttitle = "Öva på begrepp om grundläggande forskningsbegrepp";
+const wordlisttitle = "Statistikbegrepp #1";
 
 const words = [
   {
