@@ -72,9 +72,6 @@ const words = [
   { front: "Budgetproposition", back: "<b>Regeringens förslag till statsbudget.</b><br><br>Visar hur statens pengar ska användas." },
 
 
-const wordlisttitle = "Öva på begrepp och frågor om marknad, konjunkturer och ekonomi";
-
-const words = [
   {
     front: "Vad händer med priset när utbudet är högt?",
     back: "<b>Priset blir oftast lågt.</b><br><br>När det finns mycket av en vara men inte lika många som vill köpa måste säljarna sänka priset för att bli av med varorna."
@@ -168,9 +165,10 @@ const words = [
   {
     front: "Vad är en indirekt skatt?",
     back: "<b>En skatt på varor och tjänster.</b><br><br>Betalas vid konsumtion, t.ex. moms och punktskatter."
+  },
+
+  {
+    front: "Ekonomisk tillväxt",
+    back: "<b>När ett land producerar mer än tidigare.</b><br><br>Ofta mätt i BNP."
   }
-];
-
-
-  { front: "Ekonomisk tillväxt", back: "<b>När ett land producerar mer än tidigare.</b><br><br>Ofta mätt i BNP." }
 ];
