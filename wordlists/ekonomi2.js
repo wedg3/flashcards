@@ -11,7 +11,7 @@ const words = [
 
   { front: "Blandekonomi", back: "<b>En kombination av plan- och marknadsekonomi.</b><br><br>Staten bestämmer en del, marknaden resten." },
 
-  { front: "Ekonomiska kretsloppet", back: "<b>Visar hur pengar och resurser cirkulerar i samhället.</b><br><br>Mellan hushåll, företag, staten och banker." },
+  { front: "Ekonomiska kretsloppet", back: "Lär dig bilden i boken! <b>Den visar hur pengar och resurser cirkulerar i samhället.</b><br><br>Mellan hushåll, företag, staten och banker." },
 
   { front: "Hushåll", back: "<b>Privatpersoner och familjer.</b><br><br>Arbetar, konsumerar och betalar skatt." },
 
