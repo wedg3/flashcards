@@ -1,0 +1,35 @@
+const wordlisttitle = "Fysik: Ljus";
+
+const words = [
+  { front: "Vad är reflektion?", back: "Reflektion är när ljus <b>studsar</b> mot en yta, till exempel en spegel." },
+  { front: "Varför kan vi se ett föremål?", back: "Vi kan se ett föremål eftersom det <b>reflekterar ljus</b> som sedan går in i våra ögon." },
+   { front: "Vad är en ljusstråle?", back: "En ljusstråle är ett sätt att visa <b>ljusets riktning</b>." },
+  { front: "Vad är infallsvinkel?", back: "Infallsvinkel är vinkeln mellan den inkommande ljusstrålen och normalen." },
+  { front: "Vad är reflektionsvinkel?", back: "Reflektionsvinkel är vinkeln mellan den reflekterade ljusstrålen och normalen." },
+  { front: "Hur hänger infallsvinkel och reflektionsvinkel ihop?", back: "De är <b>lika stora</b> när ljus reflekteras i en plan spegel." },
+  { front: "Vad är en plan spegel?", back: "En plan spegel är en <b>helt platt spegel</b> som ger en lika stor men spegelvänd bild." },
+  { front: "Hur blir bilden i en plan spegel?", back: "Bilden blir <b>lika stor</b> som föremålet men <b>spegelvänd</b>." },
+  { front: "Vad är en konkav spegel?", back: "En konkav spegel är en spegel som är <b>inåtböjd</b> och kan samla ljus i en brännpunkt." },
+  { front: "Vad är en konvex spegel?", back: "En konvex spegel är en spegel som är <b>utåtböjd</b> och sprider ljusstrålarna." },
+  { front: "Vad är en brännpunkt?", back: "Brännpunkten är den punkt där ljusstrålar <b>samlas</b> efter reflektion eller brytning." },
+  { front: "Vad är brännvidd?", back: "Brännvidd är avståndet mellan <b>spegeln eller linsen</b> och <b>brännpunkten</b>." },
+  { front: "Vad betyder att ljuset bryts?", back: "Att ljuset bryts betyder att det <b>ändrar riktning</b> när det går från ett ämne till ett annat." },
+  { front: "Varför bryts ljus?", back: "Ljus bryts eftersom det har <b>olika hastighet</b> i olika ämnen." },
+  { front: "Vad händer när ljus går från tunnare ämne till tätare ämne?", back: "Ljusstrålen bryts <b>mot normalen</b>.<br><br>Exempel: från luft till vatten." },
+  { front: "Vad händer när ljus går från tätare ämne till tunnare ämne?", back: "Ljusstrålen bryts <b>från normalen</b>.<br><br>Exempel: från glas till luft." },
+  { front: "Vad är totalreflektion?", back: "Totalreflektion är när ljuset inte går ut i det andra ämnet utan <b>studsar tillbaka helt</b>." },
+  { front: "Vad är en konvex lins?", back: "En konvex lins är tjockast på mitten och <b>samlar ljuset</b> i en brännpunkt." },
+  { front: "Vad är en konkav lins?", back: "En konkav lins är tunnast på mitten och <b>sprider ljuset</b>." },
+
+  { front: "Varför ger rätlinjigt ljus skarpa skuggor?", back: "Eftersom ljuset går i <b>raka linjer</b>.<br><br>När något stoppar ljuset blir gränsen mellan ljus och skugga tydlig." },
+  { front: "Varför används konkava speglar i till exempel solugnar och paraboler?", back: "De samlar parallella strålar till <b>en brännpunkt</b>.<br><br>Därför kan energi eller signaler koncentreras." },
+  { front: "Varför ser föremål under vatten ibland felplacerade ut?", back: "Ljuset bryts när det går mellan <b>vatten och luft</b>.<br><br>Därför verkar föremålet ligga på en annan plats än det egentligen gör." },
+  { front: "Hur kan optiska fibrer skicka information långt?", back: "Ljuset stannar kvar i fibern genom <b>totalreflektion</b>.<br><br>Därför kan signaler färdas snabbt och långt." },
+  { front: "Varför kan en konvex lins ge en verklig bild, men en konkav lins bara en skenbild?", back: "En konvex lins <b>samlar</b> ljusstrålar så att de kan mötas.<br><br>En konkav lins <b>sprider</b> ljuset, därför bildas bara en <i>skenbild</i>." },
+  { front: "Hur fungerar en lupp?", back: "En lupp är en <b>konvex lins</b> med kort brännvidd.<br><br>Den gör att det vi tittar på ser större ut." },
+  { front: "Hur liknar ögat en kamera?", back: "<b>Ögonlinsen</b> liknar objektivet.<br><br><b>Pupillen</b> liknar bländaren.<br><br><b>Ögonlocket</b> liknar slutaren.<br><br><b>Näthinnan</b> liknar kamerans sensor eller ccd-celler." },
+  { front: "Varför bildas ett spektrum när solljus går genom ett prisma?", back: "Olika färger bryts <b>olika mycket</b>.<br><br>Därför delas det vita ljuset upp i flera färger." },
+  { front: "Varför ser en röd tröja röd ut?", back: "Den reflekterar mest <b>rött ljus</b> och absorberar mycket av de andra färgerna." },
+  { front: "Varför blir en svart yta varm i solen?", back: "En svart yta reflekterar nästan inget ljus utan <b>absorberar</b> ljuset.<br><br>Då omvandlas strålningsenergi till värme." },
+  { front: "Hur hänger strålningsenergi, fotosyntes och kemisk energi ihop?", back: "Solen skickar energi som <b>strålning</b> till jorden.<br><br>Växter fångar upp en del av den i <b>fotosyntesen</b> och lagrar den som <b>kemisk energi</b>." }
+];
