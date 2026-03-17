@@ -1,0 +1,467 @@
+<html>
+
+const wordlisttitle = "Fysik: Elektricitet";
+
+const words = [
+  { front: "Elektrisk laddning", back: "Allt material består av partiklar med laddning.<br><br>Det finns <b>positiv</b> och <b>negativ</b> laddning." },
+  { front: "Atomkärna", back: "Atomens mitt. Den är <b>positivt laddad</b> eftersom den innehåller protoner." },
+  { front: "Elektron", back: "En partikel med <b>negativ laddning</b> som finns runt atomkärnan." },
+  { front: "Proton", back: "En partikel med <b>positiv laddning</b> som finns i atomkärnan." },
+  { front: "Elektriskt neutral", back: "När ett ämne eller en atom har lika många <i>positiva</i> som <i>negativa</i> laddningar." },
+  { front: "Repellerar", back: "När föremål med <b>samma laddning</b> stöter bort varandra." },
+  { front: "Attraherar", back: "När föremål med <b>olika laddning</b> dras till varandra." },
+  { front: "Spänning", back: "Skillnaden i laddning mellan två punkter, till exempel mellan batteriets pluspol och minuspol.<br><br>Spänning mäts i <b>volt (V)</b>." },
+  { front: "Ström", back: "När elektroner rör sig i en ledning eller i en krets.<br><br>Ström mäts i <b>ampere (A)</b>." },
+  { front: "Elektrisk krets", back: "En väg där strömmen kan gå från batteriet, genom till exempel en lampa, och tillbaka igen." },
+  { front: "Sluten krets", back: "En krets som är hel, så att strömmen kan gå runt.<br><br>Utan sluten krets blir det <b>ingen ström</b>." },
+  { front: "Volt (V)", back: "Enheten för <b>spänning</b>." },
+  { front: "Ampere (A)", back: "Enheten för <b>ström</b>.<br><br>1 A = 1000 mA." },
+  { front: "Ledare", back: "Ett ämne som leder ström bra, till exempel <b>metaller</b> som koppar och silver." },
+  { front: "Isolator", back: "Ett ämne som <b>inte</b> leder ström bra, till exempel plast och glas." },
+  { front: "Resistans", back: "Motstånd mot ström i ett ämne eller i en krets.<br><br>Resistans mäts i <b>ohm (Ω)</b>." },
+  { front: "Resistor", back: "En komponent som har resistans och används för att <b>minska strömmen</b> i en krets." },
+  { front: "Seriekoppling", back: "När flera komponenter sitter <b>efter varandra</b> i samma väg.<br><br>Om en lampa går sönder kan alla slockna." },
+  { front: "Parallellkoppling", back: "När flera komponenter sitter i <b>olika grenar</b> i kretsen.<br><br>Om en lampa går sönder kan de andra ändå lysa." },
+  { front: "Kortslutning", back: "När strömmen tar en <b>för lätt väg</b>, ofta för att ledningar kommer i kontakt med varandra.<br><br>Det kan bli farligt." },
+  { front: "Säkring", back: "Skydd som bryter strömmen om den blir för stark, till exempel vid <b>överbelastning</b> eller <b>kortslutning</b>." },
+  { front: "Skyddsjordning", back: "En extra säkerhet i vissa apparater som hjälper till att leda bort farlig ström." },
+  { front: "Elektrisk energi", back: "Energi som kan omvandlas till andra energiformer, till exempel <b>ljus</b>, <b>värme</b> eller <b>rörelse</b>." },
+  { front: "Varför är en atom oftast elektriskt neutral?", back: "För att den oftast har lika många <b>protoner</b> som <b>elektroner</b>." },
+  { front: "Varför kan en lampa inte lysa i en öppen krets?", back: "För att kretsen inte är <b>sluten</b>.<br><br>Då kan inte strömmen gå runt." },
+  { front: "Vad händer om spänningen tar slut i ett batteri?", back: "Då jämnas skillnaden mellan polerna ut och det blir <b>ingen ström</b>." },
+  { front: "Varför leder metaller ström bra?", back: "För att de har elektroner som kan röra sig lätt genom materialet." },
+  { front: "Varför används plast runt elledningar?", back: "För att plast är en <b>isolator</b> och skyddar mot elstötar." },
+  { front: "Vad är skillnaden mellan serie- och parallellkoppling?", back: "<b>Seriekoppling</b>: komponenter sitter efter varandra i samma väg.<br><br><b>Parallellkoppling</b>: komponenter sitter i olika grenar." },
+  { front: "Varför kan en kortslutning vara farlig?", back: "För att strömmen kan bli för stark och skapa <b>värme</b> eller brandrisk." },
+  { front: "Vad gör en säkring i ett hus eller i en apparat?", back: "Den bryter strömmen om det blir fel, så att människor och saker skyddas." },
+  { front: "Varför är el i badrum extra farligt?", back: "För att vatten och blöt hud minskar kroppens resistans, så att mer ström kan gå genom kroppen." },
+  { front: "Varför säger man att elektrisk energi är lätt att omvandla?", back: "För att den enkelt kan bli till exempel <b>ljus</b>, <b>värme</b> eller <b>rörelse</b>." },
+  { front: "Vad händer med strömmen om resistansen ökar i en krets?", back: "Strömmen <b>minskar</b>." }
+];
+
+
+
+
+const wordlisttitle = "Fysik: Ljud";
+
+const words = [
+  { front: "Ljud", back: "Ljud uppstår när något <b>vibrerar</b>, alltså svänger fram och tillbaka.<br><br>Vibrationerna sprids som <i>ljudvågor</i>." },
+  { front: "Ljudvåg", back: "En våg som sprider ljud genom luft, vatten eller andra ämnen.<br><br>Den består av <b>förtätningar</b> och <b>förtunningar</b>." },
+  { front: "Våglängd", back: "Avståndet mellan två förtätningar eller två förtunningar i en ljudvåg." },
+  { front: "Ljudets hastighet", back: "I luft går ljud ungefär <b>340 m/s</b>.<br><br>Ljud går inte i vakuum, eftersom det inte finns något material där." },
+  { front: "Frekvens", back: "Hur många svängningar som sker på en sekund.<br><br>Frekvens mäts i <b>hertz (Hz)</b>." },
+  { front: "Hertz (Hz)", back: "Enheten för frekvens.<br><br><b>1 Hz</b> betyder <i>en svängning per sekund</i>." },
+  { front: "Ton", back: "Ett ljud med en <b>bestämd frekvens</b> kallas ton." },
+  { front: "Hög ton", back: "En hög ton har <b>hög frekvens</b>.<br><br>Den kallas också <i>diskantton</i>." },
+  { front: "Låg ton", back: "En låg ton har <b>låg frekvens</b>.<br><br>Den kallas också <i>baston</i>." },
+  { front: "Ljudstyrka", back: "Hur starkt eller svagt ett ljud är.<br><br>Samma ton kan ha olika ljudstyrka." },
+  { front: "Ultraljud", back: "Ljud med frekvens över <b>20 000 Hz</b>.<br><br>Det används bland annat i vården för att undersöka kroppen." },
+  { front: "Infraljud", back: "Ljud med frekvens under <b>20 Hz</b>." },
+
+  { front: "Fråga: Varför kan man inte höra ljud i vakuum?", back: "För att ljud behöver ett <b>material</b>, till exempel luft, för att spridas.<br><br>I vakuum finns inget sådant material." },
+  { front: "Fråga: Vad är skillnaden mellan en hög ton och en låg ton?", back: "En <b>hög ton</b> har hög frekvens och många svängningar per sekund.<br><br>En <b>låg ton</b> har låg frekvens och färre svängningar per sekund." },
+  { front: "Fråga: Hur kan samma ton vara både stark och svag?", back: "Tonen kan ha <b>samma frekvens</b>, men olika <b>ljudstyrka</b>.<br><br>Då är tonen lika hög eller låg, men låter olika starkt." },
+  { front: "Fråga: Varför blir det högre ton om en gitarrsträng är kort och hårt spänd?", back: "För att strängen då svänger <b>snabbare</b>.<br><br>Snabbare svängningar ger <b>högre frekvens</b> och alltså högre ton." },
+  { front: "Fråga: Varför är stark musik farlig för hörseln?", back: "För att mycket starkt ljud kan <b>skada hörseln</b>.<br><br>Därför är buller och hög musik något man behöver skydda sig mot." }
+];
+
+
+
+const wordlisttitle = "Fysik: Värme och väder";
+
+const words = [
+  { front: "Massa", back: "Hur mycket materia något innehåller.<br><br>Grund­enheten är <b>kilogram (kg)</b>." },
+  { front: "Volym", back: "Hur stor plats något tar.<br><br>Kan mätas i <b>dm³</b>, <b>cm³</b>, <b>liter</b> och <b>milliliter</b>." },
+  { front: "Densitet", back: "Visar hur tät en sak är.<br><br>Man räknar ut densitet genom att dela <i>massa med volym</i>." },
+  { front: "Kilogram (kg)", back: "En enhet för massa.<br><br>1 kg = <b>1000 g</b>." },
+   { front: "Volymformel", back: "Volymen av en låda kan räknas så här:<br><br><b>volym = längd · bredd · höjd</b>" },
+  { front: "Vattnets densitet", back: "Vatten har densiteten <b>1 g/cm³</b>.<br><br>Det betyder att 1 cm³ vatten väger 1 g." },
+  { front: "Utvidgning", back: "När ett ämne blir varmt tar det större plats.<br><br>Det kallas att ämnet <i>utvidgar sig</i>." },
+  { front: "Bimetall", back: "Ett band av <b>två olika metaller</b> som sitter ihop.<br><br>De utvidgas olika mycket när de värms upp." },
+  { front: "Termostat", back: "En anordning som kan styra värme.<br><br>En <i>bimetall</i> kan användas i en termostat." },
+  { front: "Celsiusskalan", back: "Temperatur mäts ofta i <b>grader Celsius (°C)</b>.<br><br>Vattnet fryser vid 0 °C och kokar vid 100 °C." },
+  { front: "Kelvinskalan", back: "En temperaturskala som börjar vid <b>absoluta nollpunkten</b>.<br><br>0 K = <b>−273 °C</b>." },
+  { front: "Absoluta nollpunkten", back: "Den lägsta möjliga temperaturen.<br><br>Den är <b>−273 °C</b>." },
+
+  { front: "Fråga: Hur räknar man ut densitet?", back: "<b>Densitet = massa / volym</b>.<br><br>Man delar alltså ett föremåls massa med dess volym." },
+  { front: "Fråga: Varför flyter trä på vatten?", back: "Trä har <b>lägre densitet</b> än vatten.<br><br>Därför flyter det." },
+  { front: "Fråga: Varför sjunker järn i vatten?", back: "Järn har <b>högre densitet</b> än vatten.<br><br>Därför sjunker det." },
+  { front: "Fråga: Vad händer med de flesta ämnen när de värms upp?", back: "De <b>utvidgar sig</b> och får oftast <i>lägre densitet</i>." },
+  { front: "Fråga: Vad är speciellt med vatten mellan 0 °C och 4 °C?", back: "Vattnets densitet <b>ökar</b> när temperaturen stiger från 0 °C till 4 °C.<br><br>Vid <b>4 °C</b> är densiteten som störst." },
+  { front: "Fråga: Varför bottenfryser inte sjöar lätt på vintern?", back: "Vatten som är <b>4 °C</b> är tyngst och sjunker till botten.<br><br>Därför blir botten inte kallast först." },
+  { front: "Fråga: På vilka tre sätt kan värme spridas?", back: "<b>Ledning</b>, <b>strömning</b> och <b>strålning</b>." },
+  { front: "Fråga: Vad är strömning?", back: "Värme som sprids i <b>vätskor och gaser</b> när ämnet rör sig.<br><br>Till exempel varm luft som stiger." },
+  { front: "Fråga: Vad är strålning?", back: "Värme som överförs utan direkt kontakt.<br><br>Ett exempel är när <b>solen värmer jorden</b>." },
+  { front: "Fråga: Varför blir mörka kläder varmare i solen än ljusa?", back: "Mörka ytor tar upp <b>mer strålning</b> än ljusa ytor.<br><br>Därför blir de varmare." },
+  { front: "Fråga: Hur bildas moln och nederbörd?", back: "När luft stiger kyls den ner och vattenångan <b>kondenserar</b> till små droppar eller iskristaller.<br><br>När de blir stora och tunga faller de som <b>regn eller snö</b>." }
+];
+
+
+
+
+const wordlisttitle = "Fysik: Ljus";
+
+const words = [
+  { front: "Vad är reflektion?", back: "Reflektion är när ljus <b>studsar</b> mot en yta, till exempel en spegel." },
+  { front: "Varför kan vi se ett föremål?", back: "Vi kan se ett föremål eftersom det <b>reflekterar ljus</b> som sedan går in i våra ögon." },
+   { front: "Vad är en ljusstråle?", back: "En ljusstråle är ett sätt att visa <b>ljusets riktning</b>." },
+  { front: "Vad är infallsvinkel?", back: "Infallsvinkel är vinkeln mellan den inkommande ljusstrålen och normalen." },
+  { front: "Vad är reflektionsvinkel?", back: "Reflektionsvinkel är vinkeln mellan den reflekterade ljusstrålen och normalen." },
+  { front: "Hur hänger infallsvinkel och reflektionsvinkel ihop?", back: "De är <b>lika stora</b> när ljus reflekteras i en plan spegel." },
+  { front: "Vad är en plan spegel?", back: "En plan spegel är en <b>helt platt spegel</b> som ger en lika stor men spegelvänd bild." },
+  { front: "Hur blir bilden i en plan spegel?", back: "Bilden blir <b>lika stor</b> som föremålet men <b>spegelvänd</b>." },
+  { front: "Vad är en konkav spegel?", back: "En konkav spegel är en spegel som är <b>inåtböjd</b> och kan samla ljus i en brännpunkt." },
+  { front: "Vad är en konvex spegel?", back: "En konvex spegel är en spegel som är <b>utåtböjd</b> och sprider ljusstrålarna." },
+  { front: "Vad är en brännpunkt?", back: "Brännpunkten är den punkt där ljusstrålar <b>samlas</b> efter reflektion eller brytning." },
+  { front: "Vad är brännvidd?", back: "Brännvidd är avståndet mellan <b>spegeln eller linsen</b> och <b>brännpunkten</b>." },
+  { front: "Vad betyder att ljuset bryts?", back: "Att ljuset bryts betyder att det <b>ändrar riktning</b> när det går från ett ämne till ett annat." },
+  { front: "Varför bryts ljus?", back: "Ljus bryts eftersom det har <b>olika hastighet</b> i olika ämnen." },
+  { front: "Vad händer när ljus går från tunnare ämne till tätare ämne?", back: "Ljusstrålen bryts <b>mot normalen</b>.<br><br>Exempel: från luft till vatten." },
+  { front: "Vad händer när ljus går från tätare ämne till tunnare ämne?", back: "Ljusstrålen bryts <b>från normalen</b>.<br><br>Exempel: från glas till luft." },
+  { front: "Vad är totalreflektion?", back: "Totalreflektion är när ljuset inte går ut i det andra ämnet utan <b>studsar tillbaka helt</b>." },
+  { front: "Vad är en konvex lins?", back: "En konvex lins är tjockast på mitten och <b>samlar ljuset</b> i en brännpunkt." },
+  { front: "Vad är en konkav lins?", back: "En konkav lins är tunnast på mitten och <b>sprider ljuset</b>." },
+
+  { front: "Varför ger rätlinjigt ljus skarpa skuggor?", back: "Eftersom ljuset går i <b>raka linjer</b>.<br><br>När något stoppar ljuset blir gränsen mellan ljus och skugga tydlig." },
+  { front: "Varför används konkava speglar i till exempel solugnar och paraboler?", back: "De samlar parallella strålar till <b>en brännpunkt</b>.<br><br>Därför kan energi eller signaler koncentreras." },
+  { front: "Varför ser föremål under vatten ibland felplacerade ut?", back: "Ljuset bryts när det går mellan <b>vatten och luft</b>.<br><br>Därför verkar föremålet ligga på en annan plats än det egentligen gör." },
+  { front: "Hur kan optiska fibrer skicka information långt?", back: "Ljuset stannar kvar i fibern genom <b>totalreflektion</b>.<br><br>Därför kan signaler färdas snabbt och långt." },
+  { front: "Varför kan en konvex lins ge en verklig bild, men en konkav lins bara en skenbild?", back: "En konvex lins <b>samlar</b> ljusstrålar så att de kan mötas.<br><br>En konkav lins <b>sprider</b> ljuset, därför bildas bara en <i>skenbild</i>." },
+  { front: "Hur fungerar en lupp?", back: "En lupp är en <b>konvex lins</b> med kort brännvidd.<br><br>Den gör att det vi tittar på ser större ut." },
+  { front: "Hur liknar ögat en kamera?", back: "<b>Ögonlinsen</b> liknar objektivet.<br><br><b>Pupillen</b> liknar bländaren.<br><br><b>Ögonlocket</b> liknar slutaren.<br><br><b>Näthinnan</b> liknar kamerans sensor eller ccd-celler." },
+  { front: "Varför bildas ett spektrum när solljus går genom ett prisma?", back: "Olika färger bryts <b>olika mycket</b>.<br><br>Därför delas det vita ljuset upp i flera färger." },
+  { front: "Varför ser en röd tröja röd ut?", back: "Den reflekterar mest <b>rött ljus</b> och absorberar mycket av de andra färgerna." },
+  { front: "Varför blir en svart yta varm i solen?", back: "En svart yta reflekterar nästan inget ljus utan <b>absorberar</b> ljuset.<br><br>Då omvandlas strålningsenergi till värme." },
+  { front: "Hur hänger strålningsenergi, fotosyntes och kemisk energi ihop?", back: "Solen skickar energi som <b>strålning</b> till jorden.<br><br>Växter fångar upp en del av den i <b>fotosyntesen</b> och lagrar den som <b>kemisk energi</b>." }
+];
+
+
+
+
+const wordlisttitle = "Fysik: Rörelse och Kraft";
+
+const words = [
+  { front: "Vad menas med likformig rörelse?", back: "Det är en rörelse med <b>konstant hastighet</b> i <b>samma riktning</b>." },
+  { front: "Vad menas med accelererad rörelse?", back: "Det betyder att hastigheten <b>ökar</b>." },
+  { front: "Vad menas med retarderad rörelse?", back: "Det betyder att hastigheten <b>minskar</b>." },
+  { front: "Vad är medelhastighet?", back: "Hur långt något färdas i genomsnitt på en viss tid.<br><br><i>Formel:</i> v = s / t" },
+  { front: "Vad betyder formeln v = s / t?", back: "<b>Hastighet = sträcka / tid</b>." },
+  { front: "Vad betyder formeln s = v · t?", back: "<b>Sträcka = hastighet · tid</b>." },
+  { front: "Vad betyder formeln t = s / v?", back: "<b>Tid = sträcka / hastighet</b>." },
+  { front: "I vilken enhet mäts kraft?", back: "Kraft mäts i <b>newton (N)</b>." },
+  { front: "Vad är en dynamometer?", back: "Ett redskap som används för att <b>mäta kraft</b>." },
+  { front: "Vad är tyngd?", back: "Tyngd är den <b>kraft</b> som drar ett föremål mot jorden." },
+  { front: "Vad är skillnaden mellan massa och tyngd?", back: "<b>Massa</b> är hur mycket materia något innehåller.<br><br><b>Tyngd</b> är kraften från jordens dragningskraft på föremålet." },
+  { front: "Vad är friktion?", back: "Friktion är en kraft som <b>bromsar rörelse</b> när två ytor rör vid varandra." },
+  { front: "Vad är tyngdpunkt?", back: "Det är den punkt där ett föremåls tyngd kan sägas vara samlad." },
+  { front: "Vad är stödyta?", back: "Det är ytan som föremålet <b>står på</b> eller vilar mot." },
+  { front: "Vad menas med fritt fall?", back: "Fritt fall är fall i <b>vakuum</b>, alltså utan luftmotstånd.<br><br>Då faller alla föremål lika fort." },
+
+  { front: "Varför är accelererad och retarderad rörelse exempel på olikformig rörelse?", back: "För att hastigheten <b>inte är konstant</b>.<br><br>Den ändras hela tiden." },
+  { front: "Varför kan det vara svårt att gå på halt underlag?", back: "För att friktionen mellan skorna och marken är <b>liten</b>.<br><br>Då är det lätt att halka." },
+  { front: "Hur kan man öka friktionen när det är halt?", back: "Man kan till exempel <b>sanda</b> vägen eller ha skor med bättre grepp." },
+  { front: "Varför använder man kullager och olja i maskiner?", back: "För att <b>minska friktionen</b> så att delarna rör sig lättare." },
+  { front: "Varför måste fingret vara under pennans tyngdpunkt om du balanserar den?", back: "Annars blir pennan <b>obalanserad</b> och faller." },
+  { front: "När faller ett föremål lättare om det står upp?", back: "När <b>lodlinjen genom tyngdpunkten</b> hamnar utanför stödytan." },
+  { front: "Hur kan man göra ett föremål mer stabilt?", back: "Genom att <b>sänka tyngdpunkten</b> eller göra <b>stödytan större</b>." },
+  { front: "Varför faller en sten som kastas framåt lika fort neråt som en sten som bara släpps?", back: "För att båda påverkas lika mycket av <b>tyngdkraften</b> nedåt.<br><br>Den framåtriktade rörelsen ändrar inte hur fort de faller nedåt." },
+  { front: "Varför ramlar du framåt när en buss tvärbromsar?", back: "På grund av <b>tröghet</b>.<br><br>Kroppen vill fortsätta röra sig framåt fast bussen stannar." },
+  { front: "Varför fortsätter ett föremål rakt fram om centripetalkraften försvinner?", back: "För att kraften som håller föremålet i cirkelrörelse inte längre finns kvar.<br><br>Då fortsätter det i den riktning det just hade." }
+];
+
+
+
+
+const wordlisttitle = "Fysik: Tryck";
+
+const words = [
+  { front: "Vad menas med tryck?", back: "Tryck visar hur stor <b>kraft</b> som verkar på en viss <b>yta</b>." },
+  { front: "Vilken enhet har tryck?", back: "Grundenheten för tryck är <b>pascal (Pa)</b>." },
+  { front: "Vad är formeln för tryck?", back: "<b>p = F / A</b><br><br>Tryck = kraft / area." },
+  { front: "Vad händer med trycket om samma kraft verkar på en liten yta?", back: "Då blir trycket <b>stort</b>." },
+  { front: "Vad händer med trycket om samma kraft verkar på en stor yta?", back: "Då blir trycket <b>litet</b>." },
+  { front: "Ge ett exempel på något som ger stort tryck på liten yta.", back: "Till exempel <b>en kniv, en spik eller en nål</b>." },
+  { front: "Hur förändras trycket i en vätska när man kommer djupare ner?", back: "Trycket blir <b>större</b> ju djupare ner man kommer." },
+  { front: "I vilka riktningar verkar trycket i en vätska?", back: "Trycket i en vätska är lika stort i <b>alla riktningar</b>." },
+  { front: "Vad kallas kraften som gör att något känns lättare i vatten?", back: "Den kallas <b>lyftkraft</b>." },
+  { front: "Vad mäts lufttryck med?", back: "Lufttryck mäts med en <b>barometer</b>." },
+
+  { front: "Varför har skidor och snöskor stor yta under sig?", back: "De har stor yta för att minska trycket mot snön.<br><br><i>Stor yta ger lägre tryck.</i>" },
+  { front: "Varför sjunker en spik lätt in i trä, men inte ett finger?", back: "Spiken har en <b>mycket liten yta</b>, så trycket blir stort.<br><br>Ett finger har större yta och ger därför mindre tryck." },
+  { front: "Varför känns en sten lättare i vatten än i luft?", back: "Vattnet ger stenen en <b>lyftkraft</b> uppåt.<br><br>Därför känns stenen lättare att hålla." },
+  { front: "Varför minskar lufttrycket när man kommer högre upp över havet?", back: "Det finns <b>mindre luft ovanför</b> som trycker ner.<br><br>Därför blir lufttrycket lägre på hög höjd." },
+  { front: "Vad händer med trycket i en gas om temperaturen ökar?", back: "Molekylerna rör sig snabbare och krockar mer.<br><br>Då kan trycket <b>öka</b>." }
+];
+
+
+const wordlisttitle = "Fysik: El med Magnetism";
+
+const words = [
+  { front: "Spänning", back: "<b>Spänning</b> mäts i <i>volt (V)</i>.<br><br>Det är det som \"driver\" strömmen genom en ledare." },
+  { front: "Ström", back: "<b>Ström</b> mäts i <i>ampere (A)</i>.<br><br>Det är elektriska laddningar som rör sig i en ledare." },
+  { front: "Resistans", back: "<b>Resistans</b> mäts i <i>ohm (Ω)</i>.<br><br>Ju större resistans ett ämne har, desto svårare har strömmen att gå fram." },
+  { front: "Ohms lag", back: "<b>Ohms lag</b> visar sambandet mellan spänning, ström och resistans.<br><br><i>R = U / I</i>, <i>U = R · I</i>, <i>I = U / R</i>." },
+  { front: "Magnetens poler", back: "En magnet har två poler: <b>nordände</b> och <b>sydände</b>." },
+  { front: "Vad händer med lika och olika magnetändar", back: "<b>Lika poler</b> stöter bort varandra.<br><br><b>Olika poler</b> dras till varandra." },
+  { front: "Magnetfält", back: "Runt en magnet finns ett <b>magnetfält</b>.<br><br>Fältlinjerna går från nordände till sydände." },
+  { front: "Om man delar en magnet", back: "Om man delar en magnet i två delar, får man <b>två nya magneter</b>.<br><br>Båda får både nordände och sydände." },
+  { front: "Jorden som magnet", back: "Jorden fungerar som en <b>stor magnet</b>.<br><br>Därför kan en magnet eller kompass ställa in sig i nord-sydlig riktning." },
+  { front: "Elektromagnet", back: "En <b>elektromagnet</b> är en spole, ofta runt en järnkärna, som blir magnetisk när ström går genom spolen." },
+  { front: "Fördel med elektromagnet", back: "En viktig fördel är att den <b>kan stängas av</b>.<br><br>Vanliga magneter är alltid magnetiska." },
+  { front: "Vad påverkar en elektromagnets styrka?", back: "Styrkan beror på <b>strömmens styrka</b> och på <b>antalet varv</b> i spolen." },
+  { front: "Induktionsström", back: "<b>Induktionsström</b> uppstår när en magnet rör sig in i eller ut ur en spole." },
+  { front: "Transformator", back: "En <b>transformator</b> används för att <b>höja eller sänka spänningen</b>.<br><br>Den består av en primärspole och en sekundärspole." },
+
+  { front: "Varför blir strömmen mindre om resistansen ökar?", back: "En större resistans gör det svårare för laddningarna att röra sig genom ledaren.<br><br>Därför blir <b>strömmen mindre</b> om spänningen är samma." },
+  { front: "Varför dras olika magnetpoler till varandra?", back: "Magnetfältet gör att <b>olika poler passar ihop</b> och dras mot varandra.<br><br>Lika poler påverkar i stället varandra så att de trycks bort." },
+  { front: "Varför får båda delarna nord- och sydände när en magnet delas?", back: "Magnetismen finns i <b>hela magneten</b>.<br><br>När man delar den försvinner inte polerna, utan varje del blir en <b>ny magnet</b> med två poler." },
+  { front: "Varför kan en spik bli magnetisk nära en magnet?", back: "Magnetens fält påverkar spiken så att den tillfälligt ordnar sina magnetiska delar åt samma håll.<br><br>Det kallas <b>influens</b>." },
+  { front: "Varför pekar en kompass mot norr och söder?", back: "Kompassnålen är en liten magnet.<br><br>Den påverkas av <b>jordens magnetfält</b> och ställer därför in sig i nord-sydlig riktning." },
+  { front: "Hur fungerar en elmotor enkelt förklarat?", back: "När ström går genom en spole i ett magnetfält påverkas spolen av krafter och börjar vrida sig.<br><br>Om strömriktningen byter håll regelbundet fortsätter den att <b>rotera</b>." },
+  { front: "Hur uppstår ström i en generator?", back: "När en magnet rör sig vid en spole, eller en spole rör sig i ett magnetfält, uppstår <b>induktionsström</b>.<br><br>Då omvandlas <b>rörelseenergi till elektrisk energi</b>." },
+  { front: "Varför kallas strömmen från en generator för växelström?", back: "Strömmen byter <b>riktning hela tiden</b> när magneten eller spolen rör sig.<br><br>Därför kallas den <b>växelström</b>." },
+  { front: "Hur kan en transformator höja spänningen?", back: "Om <b>sekundärspolen har fler varv</b> än primärspolen, blir spänningen högre i sekundärspolen." },
+  { front: "Varför höjs spänningen i kraftledningar?", back: "Högre spänning gör att mindre energi förloras som värme i ledningarna.<br><br>Därför kan el skickas <b>längre sträckor</b> mer effektivt." }
+];
+
+
+
+const wordlisttitle = "Fysik: Arbete, energi och effekt";
+
+const words = [
+  { front: "Fysikaliskt arbete", back: "Ett fysikaliskt arbete utförs när man övervinner en kraft och samtidigt flyttar ett föremål." },
+  { front: "Formel för arbete", back: "<b>Arbete = kraft · sträcka</b><br><br>W = F · s" },
+  { front: "Enhet för arbete", back: "Arbete mäts i <b>newtonmeter (Nm)</b>." },
+  { front: "Mekanisk energi", back: "Mekanisk energi är ett gemensamt namn för <b>lägesenergi</b> och <b>rörelseenergi</b>." },
+  { front: "Lägesenergi", back: "Lägesenergi är energi som finns lagrad för att något är på en viss höjd." },
+  { front: "Rörelseenergi", back: "Rörelseenergi är energi som ett föremål har när det rör sig." },
+  { front: "Energi", back: "Energi kan ses som <i>lagrat arbete</i>. Energi mäts i <b>joule (J)</b> eller <b>newtonmeter (Nm)</b>." },
+  { front: "Joule", back: "<b>1 joule = 1 newtonmeter</b><br><br>1 J = 1 Nm" },
+  { front: "Effekt", back: "Effekt visar hur mycket arbete som utförs <b>per sekund</b>." },
+  { front: "Enhet för effekt", back: "Effekt mäts i <b>watt (W)</b> eller <b>joule per sekund (J/s)</b>." },
+  { front: "Samband för effekt", back: "<b>Effekt = arbete / tid</b><br><br>P = W / t" },
+  { front: "Elektrisk energi", back: "Elektrisk energi kan räknas ut med <b>effekt · tid</b>." },
+  { front: "Formel för elektrisk energi", back: "<b>Energi = effekt · tid</b><br><br>W = P · t" },
+  { front: "Ohms lag", back: "<b>Spänning = resistans · ström</b><br><br>U = R · I" },
+  { front: "Effektlagen", back: "<b>Effekt = spänning · ström</b><br><br>P = U · I" },
+
+  { front: "Varför blir det arbete när man lyfter en sten?", back: "När du lyfter en sten använder du kraft och flyttar stenen uppåt.<br><br>Då utförs ett <b>arbete</b>, och energin lagras i stenen som <b>lägesenergi</b>." },
+  { front: "Vad händer med energin när en sten faller?", back: "När stenen faller minskar lägesenergin.<br><br>Samtidigt ökar <b>rörelseenergin</b>. Energin byter alltså form." },
+  { front: "Mekanikens gyllene regel", back: "<i>Det man vinner i kraft förlorar man i väg.</i><br><br>Det betyder att en maskin kan göra jobbet lättare, men då måste man ofta flytta längre." },
+  { front: "Varför löser en säkring ut?", back: "Säkringen löser ut när strömmen blir större än den tål.<br><br>Det händer ofta när för många apparater är kopplade till samma uttag. Kretsen blir <b>överbelastad</b>." },
+  { front: "Hur hänger arbete, energi och effekt ihop?", back: "<b>Arbete</b> är när en kraft flyttar något.<br><br><b>Energi</b> är förmågan att utföra arbete eller lagrat arbete.<br><br><b>Effekt</b> visar hur snabbt arbetet utförs." }
+];
+
+
+const wordlisttitle = "Fysik: Solsystemet";
+
+const words = [
+  { front: "Rotation", back: "När jorden snurrar runt sin egen axel.<br><br>Det tar <b>ett dygn</b> och ger oss <i>dag och natt</i>." },
+  { front: "Dygn", back: "Tiden det tar för jorden att rotera ett varv runt sin axel.<br><br><b>1 dygn = 24 timmar</b>." },
+  { front: "Tidszon", back: "Ett område på jorden där klockan är lika mycket.<br><br>Jorden är indelad i <b>24 tidszoner</b>." },
+  { front: "År", back: "Tiden det tar för jorden att röra sig ett varv runt solen.<br><br><b>1 år = 365 dygn</b>." },
+  { front: "Skottår", back: "Vart fjärde år är ett <b>skottår</b>.<br><br>Då har året <b>366 dygn</b>." },
+  { front: "Årstider", back: "De olika årstiderna uppkommer på grund av <b>jordens rörelse runt solen</b> och <b>jordaxelns lutning</b>." },
+
+  { front: "Månfaser", back: "Månens olika faser beror på hur stor del av månens <b>belysta halva</b> vi kan se från jorden." },
+  { front: "Månförmörkelse", back: "När <b>jorden</b> hamnar mellan solen och månen så att månen skuggas." },
+  { front: "Solförmörkelse", back: "När <b>månen</b> hamnar mellan solen och jorden och skymmer hela eller delar av solen." },
+  { front: "Ljusminut", back: "Ett avståndsmått som visar hur långt ljuset hinner på en minut.<br><br>Avståndet mellan solen och jorden är ungefär <b>8 ljusminuter</b>." },
+  { front: "Stjärna", back: "En stor himlakropp av heta gaser som lyser av sig själv.<br><br><b>Solen är en stjärna</b>." },
+  { front: "Planet", back: "En himlakropp som rör sig i bana runt en stjärna.<br><br>Planeter lyser inte själva utan <i>reflekterar solljus</i>." },
+  { front: "Solfäckar", back: "Mörka fläckar på solens yta.<br><br>De är mörkare eftersom temperaturen där är <b>lägre</b> än i omgivningen." },
+  { front: "Jätteplanet", back: "En mycket stor planet.<br><br>Exempel är <b>Jupiter, Saturnus, Uranus</b> och <b>Neptunus</b>." },
+  { front: "Ringsystem", back: "Ringar av stoft, is och sten som finns runt vissa planeter.<br><br><b>Saturnus</b> är mest känd för sitt ringsystem." },
+  { front: "Asteroid", back: "En liten himlakropp av sten eller metall som kretsar runt solen.<br><br>Många asteroider finns mellan <b>Mars och Jupiter</b>." },
+  { front: "Komet", back: "En himlakropp som rör sig i en <b>långsträckt oval bana</b> runt solen.<br><br>När den kommer nära solen kan den få en lysande svans." },
+  { front: "Dvärgplanet", back: "En himlakropp som kretsar runt solen men som är mindre än de vanliga planeterna.<br><br><b>Pluto</b> räknas idag som en dvärgplanet." },
+  { front: "Meteor", back: "Ljusfenomenet som uppstår när en grus- eller stenbit faller genom jordens atmosfär.<br><br>I dagligt tal kallas det <i>stjärnfall</i>." },
+ { front: "Varför får vi årstider på jorden?", back: "Årstiderna beror på att <b>jordaxeln lutar</b> samtidigt som jorden rör sig runt solen.<br><br>När norra halvklotet lutar mot solen blir det <i>sommar</i> här, eftersom solstrålarna träffar marken mer rakt. När norra halvklotet lutar bort från solen blir det <i>vinter</i>." },
+
+  { front: "Varför ser vi alltid samma sida av månen från jorden?", back: "Det beror på <b>bunden rotation</b>.<br><br>Månen snurrar ett varv runt sin egen axel på exakt lika lång tid som den rör sig ett varv runt jorden. Därför hinner samma sida hela tiden vara vänd mot oss." },
+
+  { front: "Vad är skillnaden mellan asteroid, komet och dvärgplanet?", back: "<b>Asteroid:</b> en liten sten- eller metallkropp som kretsar runt solen.<br><br><b>Komet:</b> består ofta av is, damm och sten och rör sig i en långsträckt bana. Nära solen kan den få en svans.<br><br><b>Dvärgplanet:</b> större än många asteroider, nästan klotformad, och kretsar runt solen men räknas inte som en vanlig planet.<br><br><i>Exempel:</i> Pluto är en dvärgplanet." },
+
+  { front: "Hur uppstår en solförmörkelse och en månförmörkelse?", back: "<b>Solförmörkelse</b> uppstår när månen hamnar mellan solen och jorden så att solen helt eller delvis skyms.<br><br><b>Månförmörkelse</b> uppstår när jorden hamnar mellan solen och månen så att jordens skugga faller på månen." },
+
+  { front: "Varför säger man att solen är viktig för allt liv på jorden?", back: "Solen ger <b>ljus och värme</b>, vilket gör att jorden har rätt temperatur för liv.<br><br>Solens energi driver också <i>väder, vindar och vattnets kretslopp</i>. Växter använder solens energi i fotosyntesen, och det blir grunden för nästan alla näringskedjor på jorden." }
+]; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const wordlisttitle = "Fysik: Universum";
+
+const words = [
+  { front: "Stjärna", back: "Ett klot av heta gaser, främst väte och helium, som lyser av egen energi." },
+  { front: "Solen", back: "Vår närmaste stjärna. Solen är en <b>gul stjärna</b>." },
+   { front: "Gul stjärna", back: "En stjärna med en yttemperatur på cirka <b>6 000 °C</b>." },
+  { front: "Ljusår", back: "Ett avståndsmått i rymden.<br><br>Det är den sträcka som ljuset färdas på <b>ett år</b>." },
+  { front: "Proxima Centauri", back: "Den stjärna som ligger närmast solen, cirka <b>4,3 ljusår</b> bort." },
+  { front: "Sirius", back: "Den närmaste stjärnan vi kan se på norra halvklotet, ungefär <b>9 ljusår</b> bort." },
+  { front: "Galax", back: "Ett stort system av stjärnor, gas och stoft som hålls samman av gravitation." },
+  { front: "Vintergatan", back: "Den galax som vårt solsystem tillhör." },
+  { front: "Spiralgalax", back: "En galax med spiralformade armar.<br><br><i>Vintergatan</i> och <i>Andromedagalaxen</i> är spiralgalaxer." },
+  { front: "Magellanska molnen", back: "Våra närmaste galaxgrannar: <b>Stora</b> och <b>Lilla Magellanska molnet</b>. De är små oregelbundna galaxer." },
+  { front: "Andromedagalaxen", back: "Den närmaste större galaxen från oss, på ungefär <b>2,2 miljoner ljusårs</b> avstånd." },
+  { front: "Geocentrisk världsbild", back: "En äldre världsbild där man trodde att <b>jorden var universums medelpunkt</b>." },
+  { front: "Heliocentrisk världsbild", back: "En världsbild där <b>solen</b> placerades i centrum i stället för jorden." },
+
+  { front: "Svart hål", back: "Ett område i rymden där gravitationen är så stark att inte ens ljus kan ta sig därifrån." },
+  { front: "Gravitation", back: "Den kraft som drar föremål mot varandra.<br><br>I ett svart hål är gravitationen <b>extremt stark</b>." },
+ { front: "Neutronstjärna", back: "Det som kan bli kvar efter att en stor stjärna exploderat, om den inte blir ett svart hål." },
+  { front: "Supernova", back: "En kraftig explosion som kan ske när en stor stjärna dör." },
+ 
+
+  { front: "Hur gammalt är universum ungefär?", back: "Universum tros vara ungefär <b>14 miljarder år</b> gammalt och uppstod genom <i>Big Bang</i>." },
+  { front: "Varför används ljusår i stället för kilometer i rymden?", back: "Avstånden i rymden är så enorma att kilometer blir opraktiskt.<br><br><b>Ljusår</b> gör det lättare att beskriva mycket stora avstånd mellan stjärnor och galaxer." },
+  { front: "Hur påverkar en stjärnas massa hur dess liv slutar?", back: "Massan avgör stjärnans slut.<br><br>En stjärna som solen blir först en <b>röd jättestjärna</b> och sedan en <b>vit dvärg</b>.<br><br>Större stjärnor kan sluta som <b>neutronstjärnor</b> eller, om massan är mycket stor, som <b>svarta hål</b>." },
+  { front: "Hur bildas nya stjärnor?", back: "Stjärnor bildas i moln av stoft och gas som kallas <b>nebulosor</b>.<br><br>När äldre stjärnor dör kastas materia ut i rymden, och av den materian kan nya stjärnor sedan bildas." },
+  { front: "Vad menas med att galaxerna rör sig bort från varandra, och vad kallas energin som tros driva detta?", back: "Det betyder att universum <b>expanderar</b>.<br><br>Galaxerna rör sig bort från varandra med ökande hastighet, och den okända energi som tros bidra till detta kallas <b>mörk energi</b>." }
+];
+
+
+
+const wordlisttitle = "Fysik: Energiformer och energikällor";
+
+const words = [
+  { 
+    front: "Vad menas med energiprincipen?", 
+    back: "Energi kan <b>inte förstöras</b> och <b>inte nyskapas</b>.<br><br>Den kan bara <i>omvandlas</i> från en form till en annan." 
+  },
+  { 
+    front: "Vad är mekanisk energi?", 
+    back: "Mekanisk energi är <b>lägesenergi + rörelseenergi</b>." 
+  },
+  { 
+    front: "Vad är lägesenergi?", 
+    back: "Energi som ett föremål har på grund av sin <b>höjd</b>." 
+  },
+  { 
+    front: "Vad är rörelseenergi?", 
+    back: "Energi som ett föremål har eftersom det <b>rör sig</b>." 
+  },
+  { 
+    front: "Vad är värmeenergi?", 
+    back: "Energi som hänger ihop med att partiklar <b>rör sig</b>." 
+  },
+  { 
+    front: "Vad är elektrisk energi?", 
+    back: "Energi som finns i <b>elektrisk ström</b>, till exempel i sladdar och batterier." 
+  },
+  { 
+    front: "Vad är kemisk energi?", 
+    back: "Energi som finns lagrad i ämnen, till exempel i <b>mat</b>, <b>bensin</b> och <b>ved</b>." 
+  },
+  { 
+    front: "Vad är strålningsenergi?", 
+    back: "Energi som sprids som <b>strålning</b>, till exempel <b>ljus från solen</b>." 
+  },
+  { 
+    front: "Vad är kärnenergi?", 
+    back: "Energi som finns i <b>atomkärnor</b>." 
+  },
+  { 
+    front: "Vad betyder verkningsgrad?", 
+    back: "Verkningsgrad visar hur stor del av den tillförda energin som blir <b>nyttig energi</b>.<br><br><i>Verkningsgrad = nyttig energi / tillförd energi</i>" 
+  },
+  { 
+    front: "Vad menas med nyttig energi?", 
+    back: "Den del av energin som vi faktiskt har <b>nytta av</b>." 
+  },
+  { 
+    front: "Vad är en förnybar energikälla?", 
+    back: "En energikälla som <b>inte tar slut</b> på mycket lång tid, till exempel <b>sol</b>, <b>vind</b> och <b>vatten</b>." 
+  },
+  { 
+    front: "Ge exempel på förnybara energikällor.", 
+    back: "<b>Vattenkraft</b>, <b>vindkraft</b>, <b>solenergi</b>, <b>jordvärme</b> och <b>biobränslen</b>." 
+  },
+  { 
+    front: "Vad är en icke förnybar energikälla?", 
+    back: "En energikälla som <b>så småningom tar slut</b>." 
+  },
+  { 
+    front: "Vad är fossila bränslen?", 
+    back: "<b>Olja</b>, <b>kol</b> och <b>naturgas</b>.<br><br>De kommer från växter och djur som levde för mycket länge sedan." 
+  },
+  { 
+    front: "Varför är solenergi en förnybar energikälla?", 
+    back: "För att solen fortsätter att ge energi under mycket lång tid.<br><br>Solens energi kommer från processer i solen, och solen kan lysa i flera miljarder år till." 
+  },
+  { 
+    front: "Varför ökar fossila bränslen växthuseffekten?", 
+    back: "När fossila bränslen brinner bildas <b>koldioxid</b>.<br><br>Mer koldioxid i atmosfären gör att mer värme stannar kvar." 
+  },
+  { 
+    front: "Varför räknas inte alltid biobränslen som helt miljövänliga?", 
+    back: "De kan vara bättre än fossila bränslen, men bara om man <b>planterar nya träd</b> och använder naturen på ett hållbart sätt." 
+  },
+  { 
+    front: "Varför måste radioaktivt avfall slutförvaras länge?", 
+    back: "För att avfallet avger <b>farlig strålning</b> under mycket lång tid.<br><br>Därför måste det förvaras säkert tills strålningen minskat." 
+  }
+
+];
+
+
+const wordlisttitle = "Fysik: Atom- och kärnfysik";
+
+const words = [
+  { front: "Vad är en atom?", back: "En atom är en mycket liten partikel som allt är uppbyggt av.<br><br>Den består av en <b>atomkärna</b> och <b>elektroner</b> runt omkring." },
+
+  { front: "Vad finns i atomens kärna?", back: "I atomkärnan finns <b>protoner</b> och <b>neutroner</b>." },
+
+  { front: "Vad är en proton?", back: "En proton är en partikel i atomkärnan som har <b>positiv laddning</b>." },
+
+  { front: "Vad är en neutron?", back: "En neutron är en partikel i atomkärnan som är <b>oladdad</b>, alltså neutral." },
+
+  { front: "Vad är en elektron?", back: "En elektron är en partikel som finns runt kärnan.<br><br>Den har <b>negativ laddning</b>." },
+
+  { front: "När är en atom elektriskt neutral?", back: "En atom är elektriskt neutral när den har <b>lika många protoner som elektroner</b>." },
+
+  { front: "Vad menas med elektronskal?", back: "Elektronerna finns i olika <b>skal</b> runt kärnan, till exempel K-, L- och M-skal." },
+
+  { front: "Vad visar atomnumret?", back: "Atomnumret visar <b>hur många protoner</b> det finns i atomkärnan." },
+
+  { front: "Vad visar masstalet?", back: "Masstalet visar det sammanlagda antalet <b>protoner och neutroner</b> i kärnan." },
+
+  { front: "Vad är isotoper?", back: "Isotoper är atomer av samma grundämne som har <b>samma antal protoner</b> men <b>olika antal neutroner</b>." },
+
+  { front: "Vad händer när en atom får energi?", back: "Då kan en eller flera elektroner flyttas ut till ett <b>yttre skal</b>." },
+
+  { front: "Vad händer när elektroner faller tillbaka?", back: "När elektroner faller tillbaka till ett inre skal sänds energi ut, ofta som <b>ljus</b>." },
+
+  { front: "Vad är röntgenstrålning?", back: "Röntgenstrålning uppstår när en elektron i ett inre skal slås bort och ersätts av en elektron från ett yttre skal.<br><br>Röntgenstrålning är <b>mycket energirik</b>." },
+
+  { front: "Vad betyder radioaktivt ämne?", back: "Ett radioaktivt ämne har atomkärnor som är <b>instabila</b> och kan sönderfalla." },
+
+  { front: "Vilka tre typer av radioaktiv strålning finns?", back: "De tre typerna är <b>alfastrålning</b>, <b>betastrålning</b> och <b>gammastrålning</b>." },
+
+  { front: "Varför är alfastrålning positivt laddad?", back: "Alfastrålning består av alfapartiklar, och en alfapartikel innehåller <b>två protoner</b> och <b>två neutroner</b>.<br><br>Eftersom protonerna är positiva blir alfapartikeln också <b>positivt laddad</b>." },
+
+  { front: "Varför är betastrålning negativt laddad?", back: "Betastrålning består av <b>elektroner</b>.<br><br>Eftersom elektroner har negativ laddning blir betastrålningen också <b>negativt laddad</b>." },
+
+  { front: "Vad är skillnaden mellan gammastrålning och vanligt ljus?", back: "Gammastrålning är samma typ av strålning som ljus, men den är <b>mycket mer energirik</b>." },
+
+  { front: "Hur fungerar en kedjereaktion i kärnklyvning?", back: "När en atomkärna klyvs frigörs energi och ofta flera <b>neutroner</b>.<br><br>Dessa neutroner kan träffa nya kärnor som också klyvs. Då fortsätter reaktionen i en <b>kedja</b>." },
+
+  { front: "Vad är skillnaden mellan fission och fusion?", back: "<b>Fission</b> betyder att en tung atomkärna <i>klyvs</i> i mindre delar.<br><br><b>Fusion</b> betyder att lätta atomkärnor <i>slås ihop</i> till en tyngre kärna.<br><br>I båda fallen frigörs <b>energi</b>." }
+];
+
+
+</html>
+
+  <html>
