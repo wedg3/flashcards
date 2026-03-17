@@ -1,4 +1,4 @@
-<html>
+
 
 const wordlisttitle = "Fysik: Elektricitet";
 
@@ -461,7 +461,3 @@ const words = [
   { front: "Vad är skillnaden mellan fission och fusion?", back: "<b>Fission</b> betyder att en tung atomkärna <i>klyvs</i> i mindre delar.<br><br><b>Fusion</b> betyder att lätta atomkärnor <i>slås ihop</i> till en tyngre kärna.<br><br>I båda fallen frigörs <b>energi</b>." }
 ];
 
-
-</html>
-
-  <html>
