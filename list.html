@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flashcards – Filtered</title>
+<style>
+:root {
+  --grad1: #feac5e;
+  --grad2: #c779d0;
+  --grad3: #4bc0c8;
+  --bg: linear-gradient(135deg, var(--grad1), var(--grad2) 45%, var(--grad3) 100%);
+  --front-bg: linear-gradient(145deg, #5e548e 0%, #231942 70%, #0e0a1f 100%);
+  --back-bg: linear-gradient(145deg, #0a3a4a 0%, #0a2232 70%, #02141a 100%);
+  --text: #fffaf7;
+  --muted: #e6e6e6cc;
+  --border: #ffffff;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: var(--bg);
+  background-attachment: fixed;
+  color: var(--text);
+  text-align: center;
+  padding-top: 40px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#list {
+  width: min(920px, 90vw);
+}
+
+a {
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  color: #FFFFFF;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+small {
+  color: #ccc;
+}
+</style>
+</head>
+<body>
+  <h1 id="pageTitle">Flashcards</h1>
+  <div id="list">Loading…</div>
+
+<script>
+const owner = "wedg3";
+const repo  = "flashcards";
+const branch = "main";
+const folder = "wordlists";
+const basePage = "flashcards.html";
+
+const params = new URLSearchParams(window.location.search);
+const filterWord = (params.get("filter") || "").trim();
+
+const titleRegex = /const\s+wordlisttitle\s*=\s*["'`](.*?)["'`]\s*;?/i;
+
+if (filterWord) {
+  document.getElementById("pageTitle").textContent = `${filterWord}-flashcards`;
+} else {
+  document.getElementById("pageTitle").textContent = "Alla flashcards";
+}
+
+async function getTitleFromRaw(rawUrl, fallbackName){
+  try{
+    const r = await fetch(rawUrl);
+    if(!r.ok) return fallbackName;
+    const txt = await r.text();
+    const m = txt.match(titleRegex);
+    return (m && m[1] && m[1].trim()) ? m[1].trim() : fallbackName;
+  }catch{
+    return fallbackName;
+  }
+}
+
+async function load(){
+  const api = `https://api.github.com/repos/${owner}/${repo}/contents/${folder}?ref=${branch}`;
+  const res = await fetch(api, {
+    headers: { "Accept": "application/vnd.github+json" }
+  });
+
+  if(!res.ok){
+    document.getElementById("list").textContent =
+      `Could not load lists (${res.status}). Check repo/branch/folder.`;
+    return;
+  }
+
+  const items = await res.json();
+
+  const files = items
+    .filter(x => x.type === "file")
+    .filter(x => /\.(js|json|txt)$/i.test(x.name))
+    .sort((a,b) => a.name.localeCompare(b.name, "en"));
+
+  const results = [];
+  const concurrency = 6;
+
+  for(let i = 0; i < files.length; i += concurrency){
+    const chunk = files.slice(i, i + concurrency);
+    const chunkResults = await Promise.all(chunk.map(async f => {
+      const fallback = f.name
+        .replace(/\.(js|json|txt)$/i, "")
+        .replace(/[_-]+/g, " ")
+        .trim();
+
+      const title = await getTitleFromRaw(f.download_url, fallback);
+      return { name: f.name, title };
+    }));
+    results.push(...chunkResults);
+  }
+
+  let filtered = results;
+
+  if (filterWord) {
+    filtered = results.filter(({ title }) =>
+      title.toLowerCase().includes(filterWord.toLowerCase())
+    );
+  }
+
+  filtered.sort((a, b) =>
+    a.title.localeCompare(b.title, "sv", { sensitivity: "base" })
+  );
+
+  const html = filtered.map(({ name, title }) => {
+    const url = `${basePage}?wordlist=${encodeURIComponent(name)}`;
+    return `<a href="${url}"><b>${title}</b></a>`;
+  }).join("");
+
+  document.getElementById("list").innerHTML =
+    html || `<p>Inga wordlists hittades${filterWord ? ` med "${filterWord}"` : ""}.</p>`;
+}
+
+load();
+</script>
+</body>
+</html>
