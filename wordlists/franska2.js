@@ -1,0 +1,43 @@
+const wordlisttitle = "Franska - Chez Nous Kap 3b";
+
+const words = [
+  { front: "snart, strax", back: "bientôt" },
+  { front: "jul", back: "Noël" },
+  { front: "de köper", back: "ils achètent" },
+  { front: "presenter", back: "des cadeaux" },
+  { front: "svarta strumpor", back: "des chaussettes<br><br>noires" },
+  { front: "till", back: "pour" },
+  { front: "sin pappa", back: "son papa" },
+  { front: "han köper", back: "il achète" },
+  { front: "röda vantar", back: "des gants rouges" },
+  { front: "sin mamma", back: "sa maman" },
+  { front: "nu", back: "maintenant" },
+  { front: "vid kassan", back: "à la caisse" },
+  { front: "var?", back: "où ?" },
+  { front: "min plånbok", back: "mon portefeuille" },
+  { front: "tusan", back: "zut" },
+  { front: "jag hittar inte", back: "je ne trouve pas" },
+  { front: "lugna dig!", back: "calme-toi !" },
+  { front: "i din väska", back: "dans ton sac" },
+  { front: "eller", back: "ou" },
+  { front: "i din ficka", back: "dans ta poche" },
+  { front: "den är inte där!", back: "il n’est pas là !" },
+
+  { front: "kommer fram", back: "arrive" },
+  { front: "id-kortet", back: "la carte d’identité" },
+  { front: "ursäkta", back: "pardon" },
+  { front: "det är jag", back: "c’est moi" },
+  { front: "varför? hur så?", back: "pourquoi ?" },
+  { front: "tusen tack!", back: "merci mille fois !" },
+  { front: "har du tid (två minuter)", back: "tu as deux minutes" },
+  { front: "för att ta en fika", back: "pour prendre un pot" },
+
+  { front: "lite", back: "un peu" },
+  { front: "senare", back: "plus tard" },
+  { front: "vad gör du?", back: "qu’est-ce que tu fais ?" },
+  { front: "i morgon kväll", back: "demain soir" },
+  { front: "kommer du? vill du komma?", back: "tu viens ?" },
+  { front: "här har du", back: "voilà" },
+  { front: "mitt telefonnummer", back: "mon numéro<br><br>de téléphone" },
+  { front: "trevligt!", back: "sympa !" }
+];
