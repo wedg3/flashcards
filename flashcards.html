@@ -257,7 +257,7 @@ function fitFrontText() {
   if (!el || !frontFace) return;
 
   const maxFont = 42;
-  const minFont = 28;
+  const minFont = 24;
 
   // Reset first
   el.style.fontSize = maxFont + 'px';
@@ -276,10 +276,14 @@ function fitFrontText() {
   }
 }
 	  
-    function setCard(pair) {
-  document.getElementById('frontText').textContent = pair.front || '';
-  document.getElementById('backHeader').textContent = pair.front || '';
-  document.getElementById('backText').innerHTML = (pair.back || '').replace(/\\n/g, '<br>');
+   function setCard(pair) {
+  const front = pair.front || '';
+  const back = pair.back || '';
+
+  document.getElementById('frontText').innerHTML = front;
+  document.getElementById('backHeader').textContent =
+    front.replace(/<[^>]*>/g, '').trim();
+  document.getElementById('backText').innerHTML = back.replace(/\\n/g, '<br>');
 
   requestAnimationFrame(fitFrontText);
 }
