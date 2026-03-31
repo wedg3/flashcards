@@ -100,7 +100,17 @@ button:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.3
   box-shadow: 0 20px 60px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.03);
 }
 
-.frontText { font-size: clamp(22px, 8cqw, 42px); font-weight: 700; letter-spacing: 0.03em; padding: 0 20px; }
+.frontText {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0 20px;
+  line-height: 1.2;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  text-wrap: balance;
+}
 .backText {
   font-size: clamp(18px, 3cqw, 28px);
   line-height: 1.4;
@@ -241,11 +251,38 @@ footer {
       return idx;
     }
 
+function fitFrontText() {
+  const el = document.getElementById('frontText');
+  const frontFace = document.querySelector('.front');
+  if (!el || !frontFace) return;
+
+  const maxFont = 42;
+  const minFont = 16;
+
+  // Reset first
+  el.style.fontSize = maxFont + 'px';
+
+  // Available space inside the front face
+  const availableWidth = frontFace.clientWidth - 40;
+  const availableHeight = frontFace.clientHeight - 40;
+
+  let fontSize = maxFont;
+  while (
+    fontSize > minFont &&
+    (el.scrollWidth > availableWidth || el.scrollHeight > availableHeight)
+  ) {
+    fontSize -= 1;
+    el.style.fontSize = fontSize + 'px';
+  }
+}
+	  
     function setCard(pair) {
-      document.getElementById('frontText').textContent = pair.front || '';
-      document.getElementById('backHeader').textContent = pair.front || '';
-      document.getElementById('backText').innerHTML = (pair.back || '').replace(/\\n/g, '<br>');
-    }
+  document.getElementById('frontText').textContent = pair.front || '';
+  document.getElementById('backHeader').textContent = pair.front || '';
+  document.getElementById('backText').innerHTML = (pair.back || '').replace(/\\n/g, '<br>');
+
+  requestAnimationFrame(fitFrontText);
+}
 
     // New: show specific index (with wrap-around) and update counter
     function showIndex(i) {
@@ -275,7 +312,7 @@ footer {
       const btnNew  = document.getElementById('btnNew');
       const btnPrev = document.getElementById('btnPrev');
       const btnNext = document.getElementById('btnNext');
-
+		window.addEventListener('resize', fitFrontText);
       // Flip on card click
       card.addEventListener('click', () => card.classList.toggle('flipped'));
 
