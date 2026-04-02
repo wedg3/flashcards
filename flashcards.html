@@ -104,17 +104,20 @@ button:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.3
   font-size: 42px;
   font-weight: 700;
   letter-spacing: 0.03em;
-  padding: 0 20px;
   line-height: 1.2;
+  padding: 0 20px;
+  width: 100%;
   max-width: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
   overflow-wrap: break-word;
   word-break: break-word;
   text-wrap: balance;
-	  overflow: auto;
-	  -webkit-overflow-scrolling: touch;
-  scrollbar-gutter: stable;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255,255,255,0.4) rgba(255,255,255,0.1);
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+  box-sizing: border-box;
 }
 
 	  .frontText::-webkit-scrollbar { width: 6px; }
