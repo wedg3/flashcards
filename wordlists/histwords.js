@@ -19,6 +19,9 @@ const words = [
 { front: "indirekt", back: "Indirekt betyder att något påverkar på ett sätt som inte sker rakt eller tydligt direkt, utan genom något annat.<br><br>Exempel: <i>Kriget påverkade människors liv <b>indirekt</b> genom att maten blev dyrare.</i>" },
   { front: "perspektiv", back: "Perspektiv betyder ett sätt att se på en händelse eller fråga, och olika människor kan förstå samma sak på olika sätt.<br><br>Exempel: <i>Ur arbetarnas <b>perspektiv</b> var industrialiseringen ofta hård och orättvis.</i>" },
   { front: "tolkning", back: "Tolkning betyder hur någon förstår, förklarar eller ger mening åt något som har hänt.<br><br>Exempel: <i>Historiker kan göra olika <b>tolkningar</b> av samma källa.</i>" },
+ 
+    { front: "subjektiv", back: "Subjektiv betyder att något bygger på personliga känslor, åsikter eller upplevelser.<br><br>Exempel: <i>Om en text är <b>subjektiv</b> visar den vad någon tycker eller känner.</i>" },
+  { front: "objektiv", back: "Objektiv betyder att något är sakligt och neutralt, utan personliga åsikter eller känslor.<br><br>Exempel: <i>En <b>objektiv</b> text beskriver fakta utan att försöka påverka läsaren.</i>" },
   { front: "identitet", back: "Identitet handlar om hur en person ser på sig själv och vilka grupper, värderingar eller sammanhang den känner tillhörighet till.<br><br>Exempel: <i>Nationell <b>identitet</b> blev viktig i Europa under 1800-talet.</i>" },
   { front: "källa", back: "En källa är något som ger information om det förflutna, till exempel en text, en bild, ett brev eller ett föremål.<br><br>Exempel: <i>En dagbok från kriget kan vara en viktig historisk <b>källa</b>.</i>" },
   { front: "primärkälla", back: "En primärkälla är en källa från samma tid som händelsen eller från någon som själv var med.<br><br>Exempel: <i>Ett brev skrivet av en soldat under kriget är en <b>primärkälla</b>.</i>" },
