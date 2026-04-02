@@ -328,7 +328,10 @@ function fitFrontText() {
       const btnNext = document.getElementById('btnNext');
 		window.addEventListener('resize', fitFrontText);
       // Flip on card click
-      card.addEventListener('click', () => card.classList.toggle('flipped'));
+      card.addEventListener('click', (e) => {
+  if (e.target.closest('.frontText, .backText')) return;
+  card.classList.toggle('flipped');
+});
 
       // Prevent card flip when clicking buttons inside the page
       const stopFlip = (e) => e.stopPropagation();
